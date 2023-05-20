@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: DMMono-Medium;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+
+@font-face {
+  font-family: 'NeueHaasDisplay-Mediu';
+  src: local('NeueHaasDisplay-Mediu'), local('NeueHaasDisplay-Mediu'),
+  url('../assets/fonts/NeueHaasDisplay-Mediu.woff') format('truetype');
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'NeueHaasDisplay-Roman';
+  src: local('NeueHaasDisplay-Roman'), local('NeueHaasDisplay-Roman'),
+  url('../assets/fonts/NeueHaasDisplay-Roman.woff') format('truetype');
+  font-display: swap;
+}
+
+:root {
+  //Colors
+  --gray: #404040;
+  --light-gray: #C6C6C6;
+  --white: #fff;
+  --black: #404040;
+  //Font Sizes
+  --title: 64px;
+  --menu: 36px;
+  --submenu: 24px;
+  --about: 42px;
+  --subtitle: 30px;
+  --copy: 18px;
+  --text: 22px;
+}
+
+

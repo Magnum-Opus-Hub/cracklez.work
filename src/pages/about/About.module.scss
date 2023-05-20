@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  height: 100%;
+  margin-top: 2vh;
+  justify-content: flex-end;
+  .containerLeft{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50vw;
+    .title{
+      font-family: NeueHaasDisplay-Mediu;
+      font-size: var(--about);
+    }
+    .description{
+      max-width: 20%;
+      display: block;
+      font-size: var(--text);
+      font-family: NeueHaasDisplay-Roman;
+    }
+    .socialContainer{
+      .socialTitle{
+        font-size: var(--about);
+        font-family: NeueHaasDisplay-Mediu;
+      }
+      .socialPlatforms{
+        font-size: var(--text);
+        font-family: NeueHaasDisplay-Roman;
+      }
+    }
+  }
+  .copy{
+    position: absolute;
+    bottom: 2vh;
+    right: 0;
+    left: 0;
+    text-align: center;
+    z-index: 10;
+    margin: 0 auto;
+    font-family: NeueHaasDisplay-Roman;
+    color: var(--light-gray);
+    font-size: var(--copy);
+  }
+}
+

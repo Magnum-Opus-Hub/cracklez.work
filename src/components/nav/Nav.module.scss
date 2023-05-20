@@ -1,0 +1,68 @@
+.containerMobile{
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 40px;
+  z-index: 100;
+}
+
+.container{
+  flex-direction: column;
+}
+
+.container, .containerMobile{
+  display: flex;
+  p{
+    text-decoration: none;
+    color: var(--black);
+    font-family: NeueHaasDisplay-Mediu;
+    font-size: var(--menu);
+    padding: 0;
+    margin: 0;
+  }
+  
+  .linkActive{
+    display: flex;
+    align-items: center;
+    .bullet{
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--gray);
+    }
+  }
+
+
+}
+
+.navGroup, .navGroupMobile{
+  display: flex;
+  flex-direction: column;
+  p{
+    text-decoration: none;
+    color: var(--black);
+    font-family: NeueHaasDisplay-Mediu;
+    font-size: var(--submenu);
+    padding: 0;
+    margin: 0;
+  }
+
+  .linkActive{
+
+    p::before{
+      content: '🎮';
+    }
+  }
+
+
+}
+
+
+.container::-webkit-scrollbar {
+  display: none;
+}

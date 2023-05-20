@@ -1,0 +1,67 @@
+.project {
+  color: var(--black);
+}
+
+.projectsContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projectContainer,
+.projectContainerMobile {
+  margin: 0 10px;
+  margin-top: 10vh;
+  color: black;
+  height: auto;
+  overflow: auto;
+}
+
+.projectContainerMobile {
+  padding: 0 24px;
+}
+
+.divider {
+  background-color: var(--black);
+  width: 100%;
+  height: 3px;
+}
+
+.bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  div{
+    margin: 0;
+    text-align: right;
+    :first-child{
+      font-size: var(--subtitle);
+    }
+    :nth-child(2){
+      font-size: var(--text);
+    }
+  }
+}
+
+.projectType {
+  font-size: 28px;
+  margin: 12px 0;
+}
+
+.projectImg {
+  margin-bottom: 10px;
+}
+
+.projectButton {
+  text-decoration: none;
+  font-family: DMMono-Regular;
+  font-size: var(--text);
+  color: var(--black);
+  border-radius: 26px;
+  border: 3px solid var(--black);
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
