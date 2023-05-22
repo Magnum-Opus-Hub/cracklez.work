@@ -28,19 +28,35 @@ import useIsMobile from "../hooks/useIsMobile";
                    styles.projectContainer
                 }
             >
-                <div className={isMobile ? styles.titleMobile : styles.title}>{project?.name}</div>
-                    <div
-                        className={styles.description
-                        }
-                    >
-                        {project?.description}
+                    <div className={styles.title}>{project?.name}</div>
+                
+                    <div className={styles.detailsContainer}>
+                    
+                        <div>
+                            <div
+                                className={styles.client
+                                }
+                            >
+                                <span>Client:</span>
+                                {project?.client}
+                            </div>
+                            <div
+                                className={styles.year
+                                }
+                            >
+                                <span>Year:</span>
+                                {project?.year}
+                            </div>
+                        </div>
+
+                        <div
+                            className={styles.description
+                            }
+                        >
+                            {project?.description}
+                        </div>
+                        
                     </div>
-                <div
-                    className={styles.link
-                    }
-                >
-                    <a href={project?.link} rel="noreferrer" target="_blank">{project?.link}</a>
-                </div>
             </div>
             <div
                 className={
@@ -48,7 +64,7 @@ import useIsMobile from "../hooks/useIsMobile";
                 }
             >
                 {project &&
-                    Array.from({ length: 5 }).map((item, index) => (
+                    Array.from({ length: 3}).map((item, index) => (
                         <div
                             style={{
                                 flexWrap: 'nowrap',
@@ -59,7 +75,7 @@ import useIsMobile from "../hooks/useIsMobile";
                             key={index}
                         >
                             <Image
-                                src={`/images/${project?.name}/${index}.jpg`}
+                                src={`/images/${project?.name}/${index}.png`}
                                 layout="responsive"
                                 alt={project.name}
                                 key={index}

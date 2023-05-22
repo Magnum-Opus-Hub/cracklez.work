@@ -10,13 +10,10 @@ const Project = ({ project }) => {
     <div className={styles.project}>
       <div className={styles.projectImg}>
         <Link href={`/${project.id}`}>
-        <Image
-          src={`/images/${project.name}/cover.jpg`}
-          layout="responsive"
-          alt={project.name}
-          width={1740}
-          height={980}
-        ></Image>
+          <img
+            src={`/images/${project.name}/1.png`}
+            alt={project.name}
+          ></img>
         </Link>
       </div>
     </div>

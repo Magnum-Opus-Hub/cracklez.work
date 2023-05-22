@@ -1,0 +1,5 @@
+Client:Pixie
+Year:2023
+Name:Pixie Robot
+
+Info: Typography and character design work

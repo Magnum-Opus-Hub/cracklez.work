@@ -17,13 +17,17 @@ const links = [
   }
 ];
 
+const yearLinks = [
+  {
+    url: '/year2023',
+    label: '2023'
+  }
+];
 
 
 const Nav = ({ page }) => {
 
   const router = useRouter()
-
-
 
   const { isMobile } = useIsMobile();
   return (
@@ -37,58 +41,19 @@ const Nav = ({ page }) => {
                 } 
         </Link>
           <div className={isMobile ? style.navGroupMobile : style.navGroup}>
-          <Link href={''}>
-          <div
-                  className={`${isMobile ? style.linkMobile : style.link} ${
-                      router.pathname === '/' ? style.sublinkActive : ''
-                  }`}
-              >
-                <p>2023</p>
-              </div>
-          </Link>
-          <Link href={''}>
-          <div
-                  className={`${isMobile ? style.linkMobile : style.link} ${
-                      router.pathname === '/' ? style.sublinkActive : ''
-                  }`}
-              >
-                <p>2022</p>
-              </div>
-          </Link>
-          <Link href={''}>
-          <div
-                  className={`${isMobile ? style.linkMobile : style.link} ${
-                      router.pathname === '/' ? style.sublinkActive : ''
-                  }`}
-              >
-                <p>2021</p>
-              </div>
-          </Link>
-          <Link href={''}>
-          <div
-                  className={`${isMobile ? style.linkMobile : style.link} ${
-                      router.pathname === '/' ? style.sublinkActive : ''
-                  }`}
-              >
-                <p>2020</p>
-              </div>
-          </Link>
-          <Link href={''}>
-          <div
-                  className={`${isMobile ? style.linkMobile : style.link} ${
-                      router.pathname === '/' ? style.sublinkActive : ''
-                  }`}
-              >
-                <p>2019</p>
-              </div>
-          </Link>
+            {yearLinks.map((link, i) => (
+              <Link key={i} href={link.url} className={page === '' ? style.linkActive : ''}>
+              {
+                    (router.pathname === link.url) ? <div className={style.linkActive}>
+                      <img src={`/images/arrow.svg`} alt="" />
+                      <p>{link.label}</p>
+                    </div> : <p>{link.label}</p>
+                  } 
+              </Link>
+            ))}
           </div>
-        {links.map((link, i) => (
-            <Link
-                className={page === 'home' ? style.linkActive : ''}
-                key={i}
-                href={link.url}
-            >
+          {links.map((link, i) => (
+            <Link key={i} href={link.url} className={page === '' ? style.linkActive : ''}>
               {
                   (router.pathname === link.url) ? <div className={style.linkActive}>
                     <div className={style.bullet}></div>
@@ -101,7 +66,6 @@ const Nav = ({ page }) => {
   );
 };
 
-// @ts-ignore
 export default dynamic(() => Promise.resolve(Nav), {
   ssr: false,
 })

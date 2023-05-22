@@ -2,31 +2,6 @@
     height: auto;
 }
 
-.cv{
-    height: 40vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    a{
-        text-decoration: none;
-        color: var(--black);
-    }
-
-    button{
-        background: white;
-        font-size: 24px;
-        padding: 20px;
-        width: auto;
-        border: 3px solid var(--black);
-        border-radius: 10px;
-        font-family: NeueHaasDisplay-Mediu;
-        color: var(--black);
-        height: 40px;
-    }
-}
-
 .titleMobile{
     font-size: 30px;
     top: 40px;
@@ -55,46 +30,6 @@
 
 
 .projectsContainer {
-    column-count: 2;
-  }
-
-
-.titleDetailWrapper{
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    position: fixed;
-    top: 10px;
-    right: 10px;
+    column-count: 3;
 }
 
-.titleText{
-    display: flex;
-    align-items: center;
-    font-family: NeueHaasDisplay-Mediu;
-}
-
-.titleTime, .titleDetail{
-    font-size: var(--text);
-}
-
-
-.ceva:hover{
-    color: transparent;
-    text-shadow: 0 0 8px var(--black);
-}
-
-.aboutMobile{
-    padding-top: 25px
-}
-
-.about{
-    padding: 25px 0;
-}
-
-.about, .aboutMobile{
-    text-align: center;
-    margin: 0 10px;
-    margin-top: 10vh;
-    font-size: var(--subtitle);
-}

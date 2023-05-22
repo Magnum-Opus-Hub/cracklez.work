@@ -1,5 +1,6 @@
 .containerMobile{
   width: 100vw;
+  z-index: 101;
   position: fixed;
   top: 0;
   background: white;
@@ -43,6 +44,16 @@
 .navGroup, .navGroupMobile{
   display: flex;
   flex-direction: column;
+  .linkActive{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    img{
+      margin-right: 5px;
+      width: 20px;
+      height: 20px;
+    }
+  }
   p{
     text-decoration: none;
     color: var(--black);
@@ -51,15 +62,6 @@
     padding: 0;
     margin: 0;
   }
-
-  .linkActive{
-
-    p::before{
-      content: '🎮';
-    }
-  }
-
-
 }
 
 

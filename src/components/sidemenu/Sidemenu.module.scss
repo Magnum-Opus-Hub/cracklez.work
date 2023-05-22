@@ -1,15 +1,21 @@
 .container{
-  margin-left: 2vw;
+  margin-left: 1vw;
   height: 100vh;
-  width: auto;
+  max-width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 101;
   background: var(--white);
+
+  .titleContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   .containerMobile{
     display: none;
@@ -23,6 +29,7 @@
   .title{
     font-size: var(--title);
     font-family: NeueHaasDisplay-Mediu;
+    padding-right: 3px;
     
     a{
       color: var(--black);

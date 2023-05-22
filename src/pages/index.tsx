@@ -19,14 +19,13 @@ export function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <div className={isMobile ? styles.containerMobile : styles.container}>
-      <div className={styles.projectsContainer}>
+            <div className={styles.projectsContainer}>
                 {projects.map((proj) => (
                     <Project key={proj.name} project={proj}>
-                        {proj.name}
+                      {proj.name}
                     </Project>
                 ))}
             </div>
-          
       </div>
     </>
   );
