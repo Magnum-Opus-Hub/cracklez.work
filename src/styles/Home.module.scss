@@ -1,35 +1,15 @@
 .container{
-    height: auto;
-}
-
-.titleMobile{
-    font-size: 30px;
-    top: 40px;
-    height: 6vh;
-}
-
-.title{
-    font-size: var(--title);
-}
-
-
-.title,
-.titleMobile {
-    margin-left: 10px;
-    color: var(--black);
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    z-index: 9;
-    background: var(--white);
-    border-bottom: 3px var(--black) solid;
-    font-family: NeueHaasDisplay-Mediu;
+    width: 99%;
 }
 
 
 .projectsContainer {
     column-count: 3;
+    div{
+        transition: all .2s ease-in-out; 
+    }
+    div:hover{
+        transform: scale(0.95); 
+    }
 }
 

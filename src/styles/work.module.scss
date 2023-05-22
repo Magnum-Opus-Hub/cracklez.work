@@ -22,6 +22,11 @@
     margin: 0 50px;
     width: calc(100% - 100px);
     .description{
+      span{
+        font-family: NeueHaasDisplay-Mediu;
+        padding-right: 10px;
+        font-size: var(--text);
+      }
       font-size: var(--text);
       font-family: NeueHaasDisplay-Roman;
       text-align: center;
@@ -30,7 +35,7 @@
     .year{
       span{
         font-family: NeueHaasDisplay-Mediu;
-        padding-right: 5px;
+        padding-right: 10px;
         font-size: var(--text);
       }
       font-family: NeueHaasDisplay-Roman;
@@ -39,11 +44,26 @@
     .client{
       span{
         font-family: NeueHaasDisplay-Mediu;
-        padding-right: 5px;
+        padding-right: 10px;
         font-size: var(--text);
       }
       font-family: NeueHaasDisplay-Roman;
       font-size: var(--text);
+    }
+  }
+}
+
+.imageRollContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  .imgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      width: 500px;
+      height: auto;
     }
   }
 }

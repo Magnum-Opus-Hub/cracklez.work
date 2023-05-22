@@ -53,6 +53,7 @@ import useIsMobile from "../hooks/useIsMobile";
                             className={styles.description
                             }
                         >
+                            <span>Info:</span>
                             {project?.description}
                         </div>
                         
@@ -64,25 +65,15 @@ import useIsMobile from "../hooks/useIsMobile";
                 }
             >
                 {project &&
-                    Array.from({ length: 3}).map((item, index) => (
+                    Array.from({ length: 8}).map((item, index) => (
                         <div
-                            style={{
-                                flexWrap: 'nowrap',
-                                width: '90%',
-                                margin: "auto",
-                                marginBottom: '24px',
-                            }}
+                            className={styles.imgContainer}
                             key={index}
                         >
-                            <Image
-                                src={`/images/${project?.name}/${index}.png`}
-                                layout="responsive"
-                                alt={project.name}
-                                key={index}
-                                width={1280}
-                                height={720}
-                                loading="lazy"
-                            ></Image>
+                                <img
+                                    src={`/images/${project?.name}/${index}.png`}
+                                    alt={project.name}
+                                ></img>
                         </div>
                     ))}
             </div>
