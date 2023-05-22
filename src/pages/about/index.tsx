@@ -8,8 +8,8 @@ const About = () => {
     return (
         <div className={style.container}>
             <div className={style.containerLeft}>
-                <div className= {style.title} >Hi! I'm Cracklez :)</div>
-                <div className={style.description}> I'm a ajksgdauysgvdiashdiashd
+                <div className= {style.title} >Hi! I`m Cracklez :)</div>
+                <div className={style.description}> I`m a ajksgdauysgvdiashdiashd
                 sjkdgajshgdajshdjabasjidhashujgd ashjdsaghdajshd
                  ashdjhasgdjas. asjgdaghjsfdjghasdfgoieueeyeyw.huiauydfd,
                 aksjdashgdjaioduq.djaoisdiasuidhakshkdhsjd.</div>
