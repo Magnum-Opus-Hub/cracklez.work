@@ -11,7 +11,7 @@ const Project = ({ project }) => {
       <div className={styles.projectImg}>
         <Link href={`/${project.id}`}>
           <img
-            src={`/images/${project.name}/0.png`}
+            src={`/images/${project.name}/1.png`}
             alt={project.name}
           ></img>
         </Link>

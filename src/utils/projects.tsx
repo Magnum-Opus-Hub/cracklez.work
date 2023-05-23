@@ -5,10 +5,7 @@ const projects = [
     name: 'Fight Club',
     client: 'Personal Project',
     description: 'Personal illustration',
-    images: [
-      '/images/Fight Club/0.png',
-      '/images/Fight Club/1.png',
-    ]
+    images: ['/images/Fight Club/1.png', '/images/Fight Club/2.png'],
   },
   {
     id: '1',
@@ -16,10 +13,7 @@ const projects = [
     name: 'Wizard Bot',
     client: 'Bees Knees Print Studio',
     description: '6 layers t-shirt design for screen printing',
-    images: [
-      '/images/Wizard Bot/0.png',
-      '/images/Wizard Bot/1.png',
-    ]
+    images: ['/images/Wizard Bot/1.png', '/images/Wizard Bot/2.png'],
   },
   {
     id: '2',
@@ -27,9 +21,7 @@ const projects = [
     name: 'Girl Biking',
     client: 'Personal Project',
     description: 'Personal illustration',
-    images: [
-      '/images/Girl Biking/0.png'
-    ]
+    images: ['/images/Girl Biking/1.png'],
   },
   {
     id: '3',
@@ -37,10 +29,7 @@ const projects = [
     name: 'Pink Robot',
     client: 'Breed',
     description: 'Shapes inspired from japanese mechas',
-    images: [
-      '/images/Pink Robot/0.png'
-    ]
-    
+    images: ['/images/Pink Robot/1.png'],
   },
   {
     id: '4',
@@ -49,9 +38,7 @@ const projects = [
     client: 'Null NYC',
     description:
       'Design of animated television series Cubix: Robots For Everyone',
-      images: [
-        '/images/Cubix/0.png'
-      ]
+    images: ['/images/Cubix/1.png'],
   },
   {
     id: '5',
@@ -60,10 +47,10 @@ const projects = [
     client: 'Personal Project',
     description: 'Design inspired by retro video games and space ships',
     images: [
-      '/images/Cyber II/0.png',
       '/images/Cyber II/1.png',
-      '/images/Cyber II/2.png'
-    ]
+      '/images/Cyber II/2.png',
+      '/images/Cyber II/3.png',
+    ],
   },
   {
     id: '6',
@@ -72,9 +59,9 @@ const projects = [
     client: 'Personal Project',
     description: 'Design inspired by old PS2 CD graphics',
     images: [
-      '/images/Death Of Robots 2/0.png',
-      '/images/Death Of Robots 2/1.png'
-    ]
+      '/images/Death Of Robots 2/1.png',
+      '/images/Death Of Robots 2/2.png',
+    ],
   },
   {
     id: '7',
@@ -83,10 +70,10 @@ const projects = [
     client: `Don't Blame The Kids`,
     description: 'Design inspired by old cartoon show Codename: Kids Next Door',
     images: [
-      '/images/Blow Up The Neighborhood/0.png',
       '/images/Blow Up The Neighborhood/1.png',
-      '/images/Blow Up The Neighborhood/2.png'
-    ]
+      '/images/Blow Up The Neighborhood/2.png',
+      '/images/Blow Up The Neighborhood/3.png',
+    ],
   },
   {
     id: '8',
@@ -94,10 +81,7 @@ const projects = [
     name: 'Alien Girl',
     client: 'Icy',
     description: 'Experimenting with brushes and shading',
-    images: [
-      '/images/Alien Girl/0.png',
-      '/images/Alien Girl/1.png'
-    ]
+    images: ['/images/Alien Girl/1.png', '/images/Alien Girl/2.png'],
   },
   {
     id: '9',
@@ -106,9 +90,9 @@ const projects = [
     name: 'Subzero vs Scorpion',
     description: 'Design inspired by the classic video game, Mortal Kombat',
     images: [
-      '/images/Subzero vs Scorpion/0.png',
-      '/images/Subzero vs Scorpion/1.png'
-    ]
+      '/images/Subzero vs Scorpion/1.png',
+      '/images/Subzero vs Scorpion/2.png',
+    ],
   },
   {
     id: '10',
@@ -117,10 +101,10 @@ const projects = [
     client: 'Monday Suck',
     description: 'Experimenting with shading and composition',
     images: [
-      '/images/Taxi Robot & The Chase/0.png',
       '/images/Taxi Robot & The Chase/1.png',
-      '/images/Taxi Robot & The Chase/2.png'
-    ]
+      '/images/Taxi Robot & The Chase/2.png',
+      '/images/Taxi Robot & The Chase/3.png',
+    ],
   },
   {
     id: '11',
@@ -128,10 +112,7 @@ const projects = [
     name: 'Pixie Robot',
     client: 'Pixie',
     description: 'Typography and character design work',
-    images: [
-      '/images/Pixie Robot/0.png',
-      '/images/Pixie Robot/1.png'
-    ]
+    images: ['/images/Pixie Robot/1.png', '/images/Pixie Robot/2.png'],
   },
   {
     id: '12',
@@ -139,10 +120,7 @@ const projects = [
     name: 'Racing Bots',
     client: 'Personal Project',
     description: 'Design inspired by Nascar cars',
-    images: [
-      '/images/Racing Bots/0.png',
-      '/images/Racing Bots/1.png'
-    ]
+    images: ['/images/Racing Bots/1.png', '/images/Racing Bots/2.png'],
   },
   {
     id: '13',
@@ -151,10 +129,7 @@ const projects = [
     client: 'Death Division',
     description:
       'Design inspired by gothic architecture, churches and anime characters',
-      images: [
-        '/images/Robot Nun/0.png',
-        '/images/Robot Nun/1.png'
-      ]
+    images: ['/images/Robot Nun/1.png', '/images/Robot Nun/2.png'],
   },
   {
     id: '14',
@@ -162,9 +137,7 @@ const projects = [
     name: 'Robot Shooting',
     client: 'Death Division',
     description: 'Design inspired by Halo guns',
-    images: [
-      '/images/Robot Shooting/0.png'
-    ]
+    images: ['/images/Robot Shooting/1.png'],
   },
   {
     id: '15',
@@ -172,10 +145,7 @@ const projects = [
     name: 'Space Bunny',
     client: 'Death Division',
     description: 'Experimenting with perspective, typography and brushes',
-    images: [
-      '/images/Space Bunny/0.png',
-      '/images/Space Bunny/1.png'
-    ]
+    images: ['/images/Space Bunny/1.png', '/images/Space Bunny/2.png'],
   },
   {
     id: '16',
@@ -184,12 +154,12 @@ const projects = [
     client: `Toby's Estate`,
     description:
       'Designs inspired by the singles: Drake-Hotline Bling & Michael Jackson-Smooth Criminal',
-      images: [
-        '/images/Hot-lime Bling & Smooth Caramel/0.png',
-        '/images/Hot-lime Bling & Smooth Caramel/1.png',
-        '/images/Hot-lime Bling & Smooth Caramel/2.png',
-        '/images/Hot-lime Bling & Smooth Caramel/3.png'
-      ]
+    images: [
+      '/images/Hot-lime Bling & Smooth Caramel/1.png',
+      '/images/Hot-lime Bling & Smooth Caramel/2.png',
+      '/images/Hot-lime Bling & Smooth Caramel/3.png',
+      '/images/Hot-lime Bling & Smooth Caramel/4.png',
+    ],
   },
   {
     id: '17',
@@ -198,9 +168,9 @@ const projects = [
     client: 'Voltage',
     description: 'Design inspired by construction machines',
     images: [
-      '/images/Basketball Robot/0.png',
-      '/images/Basketball Robot/1.png'
-    ]
+      '/images/Basketball Robot/1.png',
+      '/images/Basketball Robot/2.png',
+    ],
   },
   {
     id: '18',
@@ -209,11 +179,11 @@ const projects = [
     client: 'Voltage',
     description: 'Graphics inspired by sports',
     images: [
-      '/images/Voltage Sport Stickers/0.png',
       '/images/Voltage Sport Stickers/1.png',
       '/images/Voltage Sport Stickers/2.png',
-      '/images/Voltage Sport Stickers/3.png'
-    ]
+      '/images/Voltage Sport Stickers/3.png',
+      '/images/Voltage Sport Stickers/4.png',
+    ],
   },
   {
     id: '19',
@@ -221,10 +191,215 @@ const projects = [
     name: 'Zombie Land',
     client: 'Death Division',
     description: `Graphic inspired by 80's animes atmosphere`,
+    images: ['/images/Zombie Land/1.png', '/images/Zombie Land/2.png'],
+  },
+  {
+    id: '20',
+    year: '2022',
+    name: '8THWNDR Graphic',
+    client: '8THWNDR',
+    description: `Merch design for 8THWNDR`,
+    images: ['/images/8THWNDR Graphic/1.png'],
+  },
+  {
+    id: '21',
+    year: '2022',
+    name: 'Chrome Zero Graphic',
+    client: 'Chrome Zero',
+    description: `Merch and sticker design for Chrome Zero`,
     images: [
-      '/images/Zombie Land/0.png',
-      '/images/Zombie Land/1.png',
-    ]
+      '/images/Chrome Zero Graphic/1.png',
+      '/images/Chrome Zero Graphic/2.png',
+      '/images/Chrome Zero Graphic/3.png',
+      '/images/Chrome Zero Graphic/4.png',
+    ],
+  },
+  {
+    id: '22',
+    year: '2022',
+    name: 'Death of Robots Composition',
+    client: 'Personal Project',
+    description: `Exploring with composition and story telling`,
+    images: ['/images/Death of Robots Composition/1.png'],
+  },
+  {
+    id: '23',
+    year: '2022',
+    name: 'Death Of Robots Graphic',
+    client: 'Personal Project',
+    description: `T-shirt design for Death Of Robots`,
+    images: ['/images/Death Of Robots Graphic/1.png'],
+  },
+  {
+    id: '24',
+    year: '2022',
+    name: 'Downloads Graphic',
+    client: 'Downloads',
+    description: `T-shirt design and Crocs jibbitz`,
+    images: [
+      '/images/Downloads Graphic/1.png',
+      '/images/Downloads Graphic/2.png',
+      '/images/Downloads Graphic/3.png',
+      '/images/Downloads Graphic/4.png',
+    ],
+  },
+  {
+    id: '25',
+    year: '2022',
+    name: 'Girl Bot',
+    client: 'Personal Project',
+    description: `Personal illustration`,
+    images: ['/images/Girl Bot/1.png'],
+  },
+  {
+    id: '26',
+    year: '2022',
+    name: 'Hiking Bot',
+    client: 'Personal Project',
+    description: `Personal illustration`,
+    images: ['/images/Hiking Bot/1.png', '/images/Hiking Bot/2.png'],
+  },
+  {
+    id: '27',
+    year: '2022',
+    name: 'Internet Raised Graphic',
+    client: 'Internet Raised',
+    description: `T-shirt and sticker designs for Internet Raised`,
+    images: ['/images/Internet Raised Graphic/1.png'],
+  },
+  {
+    id: '28',
+    year: '2022',
+    name: 'Launch Punch Graphic',
+    client: 'Personal Project',
+    description: `Personal Illustration`,
+    images: [
+      '/images/Launch Punch Graphic/1.png',
+      '/images/Launch Punch Graphic/2.png',
+    ],
+  },
+  {
+    id: '29',
+    year: '2022',
+    name: 'Melange Graphic',
+    client: 'Melange',
+    description: `Design desired for a condom packaging`,
+    images: ['/images/Melange Graphic/1.png'],
+  },
+  {
+    id: '30',
+    year: '2022',
+    name: 'Mini Bots',
+    client: 'Personal Project',
+    description: `Personal illustrations`,
+    images: [
+      '/images/Mini Bots/1.png',
+      '/images/Mini Bots/2.png',
+      '/images/Mini Bots/3.png',
+    ],
+  },
+  {
+    id: '31',
+    year: '2022',
+    name: 'Mobile Suits NFT',
+    client: 'Personal Project',
+    description: `Personal NFT project based on robots`,
+    images: [
+      '/images/Mobile Suits NFT/1.png',
+      '/images/Mobile Suits NFT/2.png',
+      '/images/Mobile Suits NFT/3.png',
+      '/images/Mobile Suits NFT/4.png',
+      '/images/Mobile Suits NFT/5.png',
+      '/images/Mobile Suits NFT/6.png',
+      '/images/Mobile Suits NFT/7.png',
+      '/images/Mobile Suits NFT/8.png',
+      '/images/Mobile Suits NFT/9.png',
+      '/images/Mobile Suits NFT/10.png',
+      '/images/Mobile Suits NFT/11.png',
+      '/images/Mobile Suits NFT/12.png',
+      '/images/Mobile Suits NFT/13.png',
+      '/images/Mobile Suits NFT/14.png',
+      '/images/Mobile Suits NFT/15.png',
+    ],
+  },
+  {
+    id: '32',
+    year: '2022',
+    name: 'Music Bot',
+    client: 'Personal Project',
+    description: `Personal illustration`,
+    images: [
+      '/images/Music Bot/1.png',
+      '/images/Music Bot/2.png',
+      '/images/Music Bot/3.png',
+    ],
+  },
+  {
+    id: '33',
+    year: '2022',
+    name: 'Niwa Project',
+    client: 'Niwa NFT',
+    description: `Illustrations for Niwa NFT project`,
+    images: [
+      '/images/Niwa Project/1.png',
+      '/images/Niwa Project/2.png',
+      '/images/Niwa Project/3.png',
+      '/images/Niwa Project/4.png',
+      '/images/Niwa Project/5.png',
+      '/images/Niwa Project/6.png',
+      '/images/Niwa Project/7.png',
+      '/images/Niwa Project/8.png',
+      '/images/Niwa Project/9.png',
+      '/images/Niwa Project/10.png',
+      '/images/Niwa Project/11.png',
+      '/images/Niwa Project/12.png',
+      '/images/Niwa Project/13.png',
+    ],
+  },
+  {
+    id: '34',
+    year: '2022',
+    name: 'Internet Raised Graphic',
+    client: 'LXRDZ',
+    description: `T-shirt and sticker designs for Internet Raised`,
+    images: ['/images/Internet Raised Graphic/1.png'],
+  },
+  {
+    id: '35',
+    year: '2022',
+    name: 'Robot Concepts',
+    client: 'Personal Project',
+    description: `Personal illustrations`,
+    images: [
+      '/images/Robot Concepts/1.png',
+      '/images/Robot Concepts/2.png',
+      '/images/Robot Concepts/3.png',
+      '/images/Robot Concepts/4.png',
+      '/images/Robot Concepts/5.png',
+      '/images/Robot Concepts/6.png',
+      '/images/Robot Concepts/7.png',
+    ],
+  },
+  {
+    id: '36',
+    year: '2022',
+    name: 'Valent Graphic',
+    client: 'Valent',
+    description: `T-shirt design for Valent`,
+    images: [
+      '/images/Valent Graphic/1.png',
+      '/images/Valent Graphic/2.png',
+      '/images/Valent Graphic/4.png',
+      '/images/Valent Graphic/5.png',
+    ],
+  },
+  {
+    id: '37',
+    year: '2022',
+    name: 'Zealots Graphic',
+    client: 'Zealots',
+    description: `T-shirt and sticker designs for Zealots`,
+    images: ['/images//0.png', '/images/Zealots Graphic/1.png'],
   },
 ];
 
