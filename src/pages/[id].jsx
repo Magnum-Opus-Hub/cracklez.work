@@ -64,14 +64,14 @@ import useIsMobile from "../hooks/useIsMobile";
                      styles.imageRollContainer
                 }
             >
-                {project &&
-                    Array.from({ length: 8}).map((item, index) => (
+                {project && project.images &&
+                    project.images.map((path, index) => (
                         <div
                             className={styles.imgContainer}
                             key={index}
                         >
                                 <img
-                                    src={`/images/${project?.name}/${index}.png`}
+                                    src={path}
                                     alt={project.name}
                                 ></img>
                         </div>
