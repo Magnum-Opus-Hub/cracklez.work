@@ -58,7 +58,7 @@ const Contact = () => {
                                 />
                             
                          
-                                <textarea name="message" placeholder="message"/>
+                                <textarea name="message" placeholder="Write me a brief description of what are you looking"/>
                            
                                 <input
                                     className={styles.buttonStyle}

@@ -25,6 +25,10 @@ const yearLinks = [
   {
     url: '/year2022',
     label: '2022'
+  },
+  {
+    url: '/year2021',
+    label: '2021'
   }
 ];
 
