@@ -1,5 +1,0 @@
-Client:Etaj Shop
-Year:2021
-Name:Etaj Graphics
-
-Info: Poster and sticker design
