@@ -217,10 +217,10 @@ const projects = [
   {
     id: '22',
     year: '2022',
-    name: 'Death of Robots Composition',
+    name: 'Death Of Robots Composition',
     client: 'Personal Project',
     description: `Exploring with composition and story telling`,
-    images: ['/images/Death of Robots Composition/1.png'],
+    images: ['/images/Death Of Robots Composition/1.png'],
   },
   {
     id: '23',
@@ -475,10 +475,10 @@ const projects = [
   {
     id: '46',
     year: '2021',
-    name: 'Ebrich Graphic',
+    name: 'Enrich Graphic',
     client: 'Enrich Clothing',
     description: `T-shirt design for Enrich Clothing`,
-    images: ['/images/Ebrich Graphic/1.png'],
+    images: ['/images/Enrich Graphic/1.png'],
   },
   {
     id: '47',
