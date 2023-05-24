@@ -1,0 +1,5 @@
+Personal Project
+Year:2022
+Name:Mobile Suits NFT
+
+Info: Personal NFT project based on robots

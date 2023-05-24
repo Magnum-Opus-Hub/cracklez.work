@@ -1,0 +1,5 @@
+Client:Voltage
+Year:2023
+Name:Voltage Graphics
+
+Info: Sticker work and t-shirt designs. Playing with the lightning struck element

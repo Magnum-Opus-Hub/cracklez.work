@@ -1,0 +1,6 @@
+Client:Icy
+Year:2023
+Name:Alien Girl
+
+Info: Experimenting with brushes and shading
+
