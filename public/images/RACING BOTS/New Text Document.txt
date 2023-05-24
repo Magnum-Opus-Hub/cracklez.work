@@ -1,5 +1,0 @@
-Personal Project
-Year:2023
-Name:Racing Bots
-
-Info: Design inspired by Nascar cars

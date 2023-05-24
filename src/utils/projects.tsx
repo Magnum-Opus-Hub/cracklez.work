@@ -539,7 +539,7 @@ const projects = [
   {
     id: '54',
     year: '2021',
-    name: 'Hoolsus Graphic',
+    name: 'Hoolsus',
     client: 'Wakeboard',
     description: `T-shirt design for Hoolsus `,
     images: ['/images/Hoolsus Graphic/1.png'],

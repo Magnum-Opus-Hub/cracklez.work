@@ -1,5 +1,0 @@
-Client:Zealots
-Year:2022
-Name:Zealots Graphic
-
-Info: T-shirt and sticker designs for Zealots

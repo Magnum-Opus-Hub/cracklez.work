@@ -1,5 +1,0 @@
-Client:Sylvia
-Year:2021
-Name:Birthday Graphic
-
-Info: Birthday gift for Sylvia

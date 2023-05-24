@@ -1,5 +1,0 @@
-Client:Death Division
-Year:2023
-Name:Zombie Land
-
-Info: Graphic inspired by 80's animes atmosphere

@@ -1,5 +1,0 @@
-Client:Null NYC
-Year:2023
-Name:Cubix
-
-Info: Design of animated television series Cubix: Robots For Everyone

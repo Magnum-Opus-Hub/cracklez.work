@@ -1,5 +1,0 @@
-Client:Monday Suck
-Year:2023
-Name:Taxi Robot & The Chase
-
-Info: Experimenting with shading and composition

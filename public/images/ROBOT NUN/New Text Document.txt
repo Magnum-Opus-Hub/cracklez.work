@@ -1,5 +1,0 @@
-Client:Death Division
-Year:2023
-Name:Robot Nun
-
-Info: Design inspired by gothic architecture, churches and anime characters

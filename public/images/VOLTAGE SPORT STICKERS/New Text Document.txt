@@ -1,5 +1,0 @@
-Client:Voltage
-Year:2023
-Name:Voltage Sport Stickers
-
-Info: Graphics inspired by sports
