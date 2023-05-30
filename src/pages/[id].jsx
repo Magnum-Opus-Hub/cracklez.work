@@ -28,11 +28,12 @@ import useIsMobile from "../hooks/useIsMobile";
                    styles.projectContainer
                 }
             >
-                    <div className={styles.title}>{project?.name}</div>
+                
                 
                     <div className={styles.detailsContainer}>
                     
                         <div>
+                        <div className={styles.title}>{project?.name}</div>
                             <div
                                 className={styles.client
                                 }

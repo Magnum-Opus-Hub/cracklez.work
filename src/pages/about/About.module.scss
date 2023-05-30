@@ -27,6 +27,10 @@
       .socialPlatforms{
         font-size: var(--text);
         font-family: NeueHaasDisplay-Roman;
+        a{
+          text-decoration: none;
+          color: var(--black);
+        }
       }
     }
   }
