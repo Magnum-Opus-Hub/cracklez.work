@@ -3,18 +3,24 @@
   height: 100%;
   margin-top: 2vh;
   justify-content: flex-end;
+
+  img{
+    width: 30%;
+    height: auto;
+    margin: 0 1vw;
+  }
+
   .containerLeft{
     height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 50vw;
+    width: 30vw;
     .title{
       font-family: NeueHaasDisplay-Mediu;
       font-size: var(--about);
     }
     .description{
-      max-width: 20%;
       display: block;
       font-size: var(--text);
       font-family: NeueHaasDisplay-Roman;

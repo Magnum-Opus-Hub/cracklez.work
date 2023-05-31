@@ -9,20 +9,20 @@ const About = () => {
   return (
     <div className={style.container}>
       <div className={style.containerLeft}>
-        <div className={style.title}>Hi! I`m Cracklez :)</div>
+        <div className={style.title}>Hi! I'm Cracklez :)</div>
         <div className={style.description}>
-          {' '}
-          I`m a ajksgdauysgvdiashdiashd sjkdgajshgdajshdjabasjidhashujgd
-          ashjdsaghdajshd ashdjhasgdjas.
-          asjgdaghjsfdjghasdfgoieueeyeyw.huiauydfd,
-          aksjdashgdjaioduq.djaoisdiasuidhakshkdhsjd.
+          I'm a freelance illustrator and graphic designer based in Bucharest,
+          Romania. Most of my work is inspired by robots, old animes, skate-punk
+          culture, music, cartoons, toys and video games. When I'm not
+          drawing(very rare), I like to go outside and skate, watch movies or
+          play video games with my friends.
         </div>
         <div className={style.socialContainer}>
           <div className={style.socialTitle}>Social</div>
           <div className={style.socialPlatforms}>
             {clients.map((item) => (
               <div>
-                <a target="_blank"  key={item.id} href={item.link}>
+                <a target="_blank" key={item.id} href={item.link}>
                   {item.client}
                 </a>
               </div>
@@ -30,7 +30,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <h1>img placeholder</h1>
+      <img src='../images/cracklez.png' alt="cracklez" />
       <div className={style.copy}>© 2023 Cracklez Studio</div>
     </div>
   );
