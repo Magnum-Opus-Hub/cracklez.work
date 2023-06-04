@@ -39,7 +39,7 @@ const Contact = () => {
       <div className={styles.layout}>
         <div className={isMobile ? styles.containerMobile : styles.container}>
           <div className={styles.titleContainer}>
-            <div className={styles.title}>Let's work together!</div>
+            <div className={styles.title}>Let`s work together!</div>
             <div className={styles.email}>crcklzo@gmail.com</div>
           </div>
           <form ref={form} onSubmit={sendEmail}>

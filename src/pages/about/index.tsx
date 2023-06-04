@@ -11,9 +11,9 @@ const About = () => {
       <div className={style.containerLeft}>
         <div className={style.title}>Hi! I'm Cracklez :)</div>
         <div className={style.description}>
-          I'm a freelance illustrator and graphic designer based in Bucharest,
+          I`m a freelance illustrator and graphic designer based in Bucharest,
           Romania. Most of my work is inspired by robots, old animes, skate-punk
-          culture, music, cartoons, toys and video games. When I'm not
+          culture, music, cartoons, toys and video games. When I`m not
           drawing(very rare), I like to go outside and skate, watch movies or
           play video games with my friends.
         </div>
@@ -22,7 +22,7 @@ const About = () => {
           <div className={style.socialPlatforms}>
             {clients.map((item) => (
               <div>
-                <a target="_blank" key={item.id} href={item.link}>
+                <a target="_blank" rel="noreferrer" key={item.id} href={item.link}>
                   {item.client}
                 </a>
               </div>
