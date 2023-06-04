@@ -5,11 +5,28 @@ import React, { useEffect, useState } from 'react';
 import projects from '../utils/projects';
 import styles from '../styles/work.module.scss';
 import useIsMobile from "../hooks/useIsMobile";
+import { Router, useNavigate } from "react-router-dom"
 
  const WorkDetail = () => {
     const router = useRouter();
     const { id } = router.query;
     const [project, setProject] = useState({});
+    const parsedId = parseInt(project.id);
+    const numberOfItems = projects.length - 1;
+    const handlePrevious = () => {
+        const previousId = parsedId - 1;
+        if(parsedId > 0){
+            router.push(`/${previousId}`)
+        } else router.push(`/`)
+    }
+
+    const handleNext = () => {
+        const nextId = parsedId + 1;
+        if(parsedId < numberOfItems){
+            router.push(`/${nextId}`)
+        } else router.push(`/`)
+    }
+
      const {isMobile} = useIsMobile();
 
     useEffect(() => {
@@ -77,6 +94,10 @@ import useIsMobile from "../hooks/useIsMobile";
                                 ></img>
                         </div>
                     ))}
+                <div className={styles.buttonsContainer}>
+                    <button onClick={handlePrevious}>Previous</button>
+                    <button onClick={handleNext}>Next</button>
+                </div>
             </div>
         </>
     );

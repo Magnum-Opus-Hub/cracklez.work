@@ -6,6 +6,7 @@
   justify-content: space-around;
   align-items:flex-start;
 
+
   .title{
     width: 100%;
     text-align: left;
@@ -57,6 +58,21 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+
+  .buttonsContainer{
+    position: fixed;
+    right: 1vw;
+    bottom: 2vh;
+
+    button{
+      border: 0;
+      font-family: NeueHaasDisplay-Mediu;
+      color: var(--black);
+      font-size: var(--text);
+      background: transparent;
+    }
+  }
+
   .imgContainer{
     display: flex;
     justify-content: center;
