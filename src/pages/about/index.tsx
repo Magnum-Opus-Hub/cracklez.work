@@ -21,11 +21,9 @@ const About = () => {
           <div className={style.socialTitle}>Social</div>
           <div className={style.socialPlatforms}>
             {clients.map((item) => (
-              <div>
                 <a target="_blank" rel="noreferrer" key={item.id} href={item.link}>
                   {item.client}
                 </a>
-              </div>
             ))}
           </div>
         </div>
