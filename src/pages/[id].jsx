@@ -5,7 +5,6 @@ import React, { useEffect, useState } from 'react';
 import projects from '../utils/projects';
 import styles from '../styles/work.module.scss';
 import useIsMobile from "../hooks/useIsMobile";
-import { Router, useNavigate } from "react-router-dom"
 
  const WorkDetail = () => {
     const router = useRouter();
