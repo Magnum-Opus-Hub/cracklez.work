@@ -1,9 +1,11 @@
 import Layout from '../components/layout/Layout';
 import '../styles/globals.scss';
 import AnimatedCursor from "react-animated-cursor"
+import {Analytics} from "@vercel/analytics/react"
 
 function MyApp({ Component, pageProps }) {
   return (
+    <>
     <Layout>
         <AnimatedCursor innerSize={8}
                         outerSize={35}
@@ -19,6 +21,8 @@ function MyApp({ Component, pageProps }) {
                         }} />
       <Component {...pageProps} />
     </Layout>
+    <Analytics/>
+    </>
   );
 }
 
