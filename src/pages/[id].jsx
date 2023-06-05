@@ -5,13 +5,18 @@ import React, { useEffect, useState } from 'react';
 import projects from '../utils/projects';
 import styles from '../styles/work.module.scss';
 import useIsMobile from "../hooks/useIsMobile";
+import Modal from "../components/modal/Modal"
 
  const WorkDetail = () => {
     const router = useRouter();
     const { id } = router.query;
     const [project, setProject] = useState({});
+    const [clickedImg, setClickedImg ] = useState(null);
+    const [currentIndex, setCurrentIndex] = useState(null);
     const parsedId = parseInt(project.id);
     const numberOfItems = projects.length - 1;
+    const totalLength = project.images
+
     const handlePrevious = () => {
         const previousId = parsedId - 1;
         if(parsedId > 0){
@@ -26,9 +31,48 @@ import useIsMobile from "../hooks/useIsMobile";
         } else router.push(`/`)
     }
 
-     const {isMobile} = useIsMobile();
+    const handleClick = (item,index) =>{
+        setCurrentIndex(index)
+        setClickedImg(item)
+    }
+
+    const handleRotationRight = () =>{
+        if(currentIndex +1 >= totalLength){
+            setCurrentIndex(0);
+            const newUrl = project.images[0]
+            setClickedImg(newUrl);
+            return;
+        }
+        const newIndex = currentIndex + 1;
+        const newUrl = project.images.filter((item)=>{
+            return project.images.indexOf(item) === newIndex;
+        })
+        const newItem = newUrl[0];
+        setClickedImg(newItem);
+        setCurrentIndex(newIndex);
+    }
+
+    const handleRotationLeft = ()=>{
+        if(currentIndex === 0){
+            setCurrentIndex(totalLength - 1)
+            const newUrl = project.images[totalLength-1];
+            setClickedImg(newUrl)
+        }
+        const newIndex = currentIndex -1;
+        const newUrl = project.images.filter((item)=>{
+            return project.images.indexOf(item) === newIndex;
+        })
+        const newItem = newUrl[0];
+        setClickedImg(newItem);
+        setCurrentIndex(newIndex);
+    }
+    
+    const {isMobile} = useIsMobile();
 
     useEffect(() => {
+        console.log(
+            currentIndex, clickedImg
+        )
         if (!id) {
             return;
         }
@@ -82,13 +126,14 @@ import useIsMobile from "../hooks/useIsMobile";
                 }
             >
                 {project && project.images &&
-                    project.images.map((path, index) => (
+                    project.images.map((item, index) => (
                         <div
                             className={styles.imgContainer}
                             key={index}
                         >
                                 <img
-                                    src={path}
+                                    onClick={()=> handleClick(item,index)}
+                                    src={item}
                                     alt={project.name}
                                 ></img>
                         </div>
@@ -97,6 +142,9 @@ import useIsMobile from "../hooks/useIsMobile";
                     <button onClick={handlePrevious}>Previous</button>
                     <button onClick={handleNext}>Next</button>
                 </div>
+                {clickedImg && 
+                    <Modal clickedImg={clickedImg} totalLength={totalLength} handleRotationRight={handleRotationRight} handleRotationLeft={handleRotationLeft} setClickedImg={setClickedImg} />
+                }
             </div>
         </>
     );
