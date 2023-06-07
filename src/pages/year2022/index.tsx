@@ -32,6 +32,4 @@ export function Year2022() {
   );
 }
 
-export default dynamic(() => Promise.resolve(Year2022), {
-  ssr: false,
-});
+export default Year2022;

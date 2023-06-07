@@ -33,5 +33,5 @@ export function Year2023() {
 }
 
 export default dynamic(() => Promise.resolve(Year2023), {
-  ssr: false,
+  ssr: true,
 });

@@ -68,3 +68,19 @@
 .container::-webkit-scrollbar {
   display: none;
 }
+
+
+
+@media only screen and (max-width: 500px) {
+  .container, .containerMobile{
+    display: flex;
+    p{
+      text-decoration: none;
+      color: var(--black);
+      font-family: NeueHaasDisplay-Mediu;
+      font-size: var(--mobile-text);
+      padding: 0;
+      margin: 0;
+    }
+  }
+}

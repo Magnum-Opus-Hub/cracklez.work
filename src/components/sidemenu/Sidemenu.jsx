@@ -34,5 +34,5 @@ const Sidemenu = () => {
 };
 
 export default dynamic(() => Promise.resolve(Sidemenu), {
-    ssr: false,
+    ssr: true,
 });

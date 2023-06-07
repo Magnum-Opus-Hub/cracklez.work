@@ -13,3 +13,10 @@
     }
 }
 
+
+@media only screen and (max-width: 500px) {
+    .projectsContainer {
+        padding-top: 70px;
+        column-count: 1;
+    }
+  }

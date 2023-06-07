@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 import projects from '../utils/projects';
@@ -150,4 +151,6 @@ import Modal from "../components/modal/Modal"
     );
 };
 
- export default WorkDetail
+ export default dynamic(() => Promise.resolve(WorkDetail), {
+    ssr: true,
+  });

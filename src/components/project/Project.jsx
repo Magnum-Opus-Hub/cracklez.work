@@ -21,5 +21,5 @@ const Project = ({ project }) => {
 };
 
 export default dynamic(() => Promise.resolve(Project), {
-  ssr: false,
+  ssr: true,
 });

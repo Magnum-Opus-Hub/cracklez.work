@@ -21,19 +21,22 @@ const About = () => {
           <div className={style.socialTitle}>Social</div>
           <div className={style.socialPlatforms}>
             {clients.map((item) => (
-                <a target="_blank" rel="noreferrer" key={item.id} href={item.link}>
-                  {item.client}
-                </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                key={item.id}
+                href={item.link}
+              >
+                {item.client}
+              </a>
             ))}
           </div>
         </div>
       </div>
-      <img src='../images/cracklez.png' alt="cracklez" />
+      <img src="../images/cracklez.png" alt="cracklez" />
       <div className={style.copy}>© 2023 Cracklez Studio</div>
     </div>
   );
 };
 
-export default dynamic(() => Promise.resolve(About), {
-  ssr: false,
-});
+export default About;
