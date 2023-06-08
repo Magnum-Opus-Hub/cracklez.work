@@ -41,6 +41,7 @@ body {
 
 .ovfn{
   overflow: hidden;
+  background: #3C6EDA;
 }
 
 .video{
@@ -51,6 +52,12 @@ body {
   right: 0;
   z-index: 9999;
   object-fit: cover;
+  background: #3C6EDA;
+
+  video{
+    width: 100vw;
+    height: 100vh;
+  }
 }
 
 .videonot{

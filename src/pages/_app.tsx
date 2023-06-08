@@ -17,12 +17,14 @@ function MyApp({ Component, pageProps }) {
   }, []);
   return (
     <>
-      <video
+      <div className={!loading ? 'videonot' : 'video'}>
+        <video
         src="/images/animation.mp4"
         autoPlay
         muted
-        className={!loading ? 'videonot' : 'video'}
-      />
+      
+        />
+      </div>
       <Layout>
         <AnimatedCursor
           innerSize={8}
