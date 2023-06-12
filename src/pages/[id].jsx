@@ -140,8 +140,8 @@ import Modal from "../components/modal/Modal"
                         </div>
                     ))}
                 <div className={styles.buttonsContainer}>
-                    <button onClick={handlePrevious}>Previous</button>
-                    <button onClick={handleNext}>Next</button>
+                    <button onClick={handlePrevious}><img src={`/images/arrow1.svg`} alt="" />Previous</button>
+                    <button onClick={handleNext}>Next<img src={`/images/arrow2.svg`} alt="" /></button>
                 </div>
                 {clickedImg && 
                     <Modal clickedImg={clickedImg} totalLength={totalLength} handleRotationRight={handleRotationRight} handleRotationLeft={handleRotationLeft} setClickedImg={setClickedImg} />

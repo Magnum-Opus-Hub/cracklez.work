@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
         src="/images/animation.mp4"
         autoPlay
         muted
-      
+        playsInline
         />
       </div>
       <Layout>
