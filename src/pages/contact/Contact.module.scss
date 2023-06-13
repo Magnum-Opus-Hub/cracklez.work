@@ -111,12 +111,12 @@
 
 @media only screen and (max-width: 500px) {
   .layout{
-    width: 100%;
+    width: 96vw;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     justify-content: center;
-    padding: 0 3vw;
+    margin: 0 2vw;
     .container {
       display: flex;
       flex-direction: column;
@@ -126,11 +126,10 @@
       margin-top: 2vh;
       margin-right: 0;
       .titleContainer{
-        padding-top: 50px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 100vw;
+        width: 96vw;
       }
   
       .title{
@@ -159,8 +158,8 @@
         height: 30px;
         padding: 10px 0;
         text-align: center;
-        width: 100vw;
-        font-size: var(--text);
+        width: 96vw;
+        font-size: var(--mobile-text);
         font-family: NeueHaasDisplay-Roman;
         text-indent: 10px;
         color: var(--white);
@@ -182,8 +181,8 @@
         color: var(--white);
         height: 20vh;
         border: 0px;
-        width: 100vw;
-        font-size: var(--text);
+        width: 96vw;
+        font-size: var(--mobile-text);
         font-family: NeueHaasDisplay-Roman;
         background: var(--light-gray);
         text-indent: 10px;
@@ -202,9 +201,9 @@
       .buttonStyle {
         background: var(--black);
         color: var(--white);
-        font-size: var(--text);
+        font-size: var(--mobile-text);
         font-family: NeueHaasDisplay-Roman;
-        width: 100vw;
+        width: 96vw;
         border: none;
         padding: 10px 0;
       }

@@ -9,14 +9,51 @@ import Image from 'next/image';
 
 const Sidemenu = () => {
     const {isMobile} = useIsMobile();
-    const [burgerClass, setBurgerClass] = useState("burger-bar unclicked")
-    const [menuClass, setMenuClass] = useState('menu hidden')
+    const [burger, setBurger] = useState(false)
+    const displayBurger = () => {
+        setBurger(true)
+    }
+
+    const hideBurger = () =>{
+        setBurger(false)
+    }
+
 
     return (
 
         isMobile ?
                 <div className={style.navContainerMobile}>
-                    <Nav page={undefined}/>
+                    <div className={style.logo}>
+                    <Image
+                    src={`/images/logo.svg`}
+                    layout="responsive"
+                    width={1}
+                    height={1}
+                    alt='cracklez logo'
+                    ></Image>
+                    </div>
+                {
+                    !burger 
+
+                    ? 
+                    <div className={style.burgerShow}>
+                        <button onClick={displayBurger}>
+                        <img
+                        src={`/images/menushow.svg`}
+                        alt='cracklez logo'
+                        ></img>
+                        </button>
+                    </div> 
+                    
+                    : <div className={style.burgerHide}>
+                        <Nav></Nav>
+                        <button onClick={hideBurger}><img
+                        src={`/images/menuhide.svg`}
+
+                        alt='cracklez logo'
+                        ></img></button>
+                      </div>
+                }
                 </div>
              :
             <div className={isMobile ? style.containerMobile : style.container}>
