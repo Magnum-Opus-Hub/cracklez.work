@@ -77,11 +77,11 @@ const Contact = () => {
           <div className={styles.title}>Clients</div>
           <div className={styles.clients}>
             {clients.map((item) => (
-              <div>
+              <div key={item.id}>
+
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  key={item.id}
                   href={item.link}
                 >
                   {item.client}
