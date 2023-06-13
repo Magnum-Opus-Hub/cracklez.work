@@ -20,16 +20,15 @@ const About = () => {
         <div className={style.socialContainer}>
           <div className={style.socialTitle}>Social</div>
           <div className={style.socialPlatforms}>
-            {clients.map((item) => (
-              <a
-                target="_blank"
-                rel="noreferrer"
-                key={item.id}
-                href={item.link}
-              >
-                {item.client}
-              </a>
-            ))}
+            <div>
+              <a href="">Instagram</a>
+            </div>
+            <div>
+              <a href="">Behance</a>
+            </div>
+            <div>
+              <a href="">Twitter</a>
+            </div>
           </div>
         </div>
       </div>

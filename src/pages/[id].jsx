@@ -5,7 +5,6 @@ import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 import projects from '../utils/projects';
 import styles from '../styles/work.module.scss';
-import useIsMobile from "../hooks/useIsMobile";
 import Modal from "../components/modal/Modal"
 
  const WorkDetail = () => {
@@ -67,8 +66,7 @@ import Modal from "../components/modal/Modal"
         setClickedImg(newItem);
         setCurrentIndex(newIndex);
     }
-    
-    const {isMobile} = useIsMobile();
+
 
     useEffect(() => {
         console.log(

@@ -56,3 +56,60 @@
   }
 }
 
+
+
+@media only screen and (max-width: 500px) {
+  .container {
+    flex-direction: column;
+    padding: 0 3vw;
+    display: flex;
+    height: 100%;
+    margin-top: 10vh;
+    justify-content: flex-end;
+  
+    img{
+      width: auto;
+      height: auto;
+      margin: 0;
+    }
+  
+    .containerLeft{
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: auto;
+      .title{
+        font-family: NeueHaasDisplay-Mediu;
+        font-size: var(--mobile-text);
+        padding-bottom: 2vh;
+      }
+      .description{
+        display: block;
+        font-size: var(--mobile-text);
+        font-family: NeueHaasDisplay-Roman;
+      }
+      .socialContainer{
+        padding: 2vh 0;
+        .socialTitle{
+          font-size: var(--mobile-text);
+          font-family: NeueHaasDisplay-Mediu;
+        }
+        .socialPlatforms{
+          display: flex;
+          flex-direction: column;
+          font-size: var(--mobile-text);
+          font-family: NeueHaasDisplay-Roman;
+          a{
+            text-decoration: none;
+            color: var(--black);
+          }
+        }
+      }
+    }
+    .copy{
+      display: none;
+    }
+  }
+  
+}

@@ -4,9 +4,12 @@ import useIsMobile from "../../hooks/useIsMobile";
 import style from './Sidemenu.module.scss'
 import dynamic from "next/dynamic";
 import Link from "next/link";
+import { useState } from 'react';
 
 const Sidemenu = () => {
     const {isMobile} = useIsMobile();
+    const [burgerClass, setBurgerClass] = useState("burger-bar unclicked")
+    const [menuClass, setMenuClass] = useState('menu hidden')
 
     return (
 

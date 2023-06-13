@@ -3,7 +3,7 @@ import styles from './Contact.module.scss';
 import Head from 'next/head';
 import emailjs from '@emailjs/browser';
 import dynamic from 'next/dynamic';
-import useIsMobile from '../../hooks/useIsMobile';
+import clients from '../../utils/clients';
 
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -29,7 +29,6 @@ const Contact = () => {
     e.target.reset();
   };
 
-  const { isMobile } = useIsMobile();
 
   return (
     <>
@@ -37,14 +36,14 @@ const Contact = () => {
         <title>Contact</title>
       </Head>
       <div className={styles.layout}>
-        <div className={isMobile ? styles.containerMobile : styles.container}>
+        <div className={styles.container}>
           <div className={styles.titleContainer}>
             <div className={styles.title}>Let`s work together!</div>
             <div className={styles.email}>crcklzo@gmail.com</div>
           </div>
           <form ref={form} onSubmit={sendEmail}>
             <input
-            required
+              required
               className={styles.input}
               placeholder="subject"
               type="text"
@@ -52,7 +51,7 @@ const Contact = () => {
             />
 
             <input
-            required
+              required
               className={styles.input}
               placeholder="email"
               type="email"
@@ -60,7 +59,7 @@ const Contact = () => {
             />
 
             <input
-            required
+              required
               className={styles.input}
               placeholder="budget"
               type="text"
@@ -68,7 +67,7 @@ const Contact = () => {
             />
 
             <textarea
-            required
+              required
               name="message"
               placeholder="Write me a brief description of what are you looking"
             />
@@ -77,12 +76,18 @@ const Contact = () => {
           </form>
           <div className={styles.title}>Clients</div>
           <div className={styles.clients}>
-            <div>Behance</div>
-            <div>Instagram</div>
-            <div>Twitter</div>
-            <div>Behance</div>
-            <div>Instagram</div>
-            <div>Twitter</div>
+            {clients.map((item) => (
+              <div>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  key={item.id}
+                  href={item.link}
+                >
+                  {item.client}
+                </a>
+              </div>
+            ))}
           </div>
         </div>
       </div>
