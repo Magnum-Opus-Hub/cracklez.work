@@ -67,6 +67,7 @@ import Modal from "../components/modal/Modal"
         setCurrentIndex(newIndex);
     }
 
+    const {isMobile} = useIsMobile();
 
     useEffect(() => {
         console.log(
@@ -87,10 +88,10 @@ import Modal from "../components/modal/Modal"
                    styles.projectContainer
                 }
             >
-                
-                
+
+
                     <div className={styles.detailsContainer}>
-                    
+
                         <div>
                         <div className={styles.title}>{project?.name}</div>
                             <div
@@ -116,7 +117,7 @@ import Modal from "../components/modal/Modal"
                             <span>Info:</span>
                             {project?.description}
                         </div>
-                        
+
                     </div>
             </div>
             <div
@@ -130,18 +131,18 @@ import Modal from "../components/modal/Modal"
                             className={styles.imgContainer}
                             key={index}
                         >
-                                <img
+                                <Image
                                     onClick={()=> handleClick(item,index)}
                                     src={item}
                                     alt={project.name}
-                                ></img>
+                                ></Image>
                         </div>
                     ))}
                 <div className={styles.buttonsContainer}>
-                    <button onClick={handlePrevious}><img src={`/images/arrow1.svg`} alt="" />Previous</button>
-                    <button onClick={handleNext}>Next<img src={`/images/arrow2.svg`} alt="" /></button>
+                    <button onClick={handlePrevious}><Image src={`/images/arrow1.svg`} alt="" />Previous</button>
+                    <button onClick={handleNext}>Next<Image src={`/images/arrow2.svg`} alt="" /></button>
                 </div>
-                {clickedImg && 
+                {clickedImg &&
                     <Modal clickedImg={clickedImg} totalLength={totalLength} handleRotationRight={handleRotationRight} handleRotationLeft={handleRotationLeft} setClickedImg={setClickedImg} />
                 }
             </div>

@@ -4,6 +4,7 @@ import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import useIsMobile from '../../hooks/useIsMobile';
 import clients from '../../utils/clients';
+import Image from 'next/image';
 
 const About = () => {
   return (
@@ -32,7 +33,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <img src="../images/cracklez.png" alt="cracklez" />
+      <Image src="../images/cracklez.png" alt="cracklez" />
       <div className={style.copy}>© 2023 Cracklez Studio</div>
     </div>
   );

@@ -4,6 +4,7 @@ import style from './Nav.module.scss';
 import useIsMobile from '../../hooks/useIsMobile';
 import dynamic from 'next/dynamic';
 import Link from "next/link";
+import Image from 'next/image';
 
 
 const links = [
@@ -46,17 +47,17 @@ const Nav = ({ page }) => {
                     <div className={style.bullet}></div>
                     <p>Work</p>
                   </div> : <p>Work</p>
-                } 
+                }
         </Link>
           <div className={isMobile ? style.navGroupMobile : style.navGroup}>
             {yearLinks.map((link, i) => (
               <Link key={i} href={link.url} className={page === '' ? style.linkActive : ''}>
               {
                     (router.pathname === link.url) ? <div className={style.linkActive}>
-                      <img src={`/images/arrow.svg`} alt="" />
+                      <Image src={`/images/arrow.svg`} alt="" />
                       <p>{link.label}</p>
                     </div> : <p>{link.label}</p>
-                  } 
+                  }
               </Link>
             ))}
           </div>
@@ -67,7 +68,7 @@ const Nav = ({ page }) => {
                     <div className={style.bullet}></div>
                     <p>{link.label}</p>
                   </div> : <p>{link.label}</p>
-                } 
+                }
             </Link>
         ))}
       </div>
