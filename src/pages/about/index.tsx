@@ -5,6 +5,7 @@ import dynamic from 'next/dynamic';
 import useIsMobile from '../../hooks/useIsMobile';
 import clients from '../../utils/clients';
 import Image from 'next/image';
+import Cracklez from "public/images/cracklez.png"
 
 const About = () => {
   return (
@@ -33,7 +34,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Image src="../images/cracklez.png" alt="cracklez" />
+      <Image src={Cracklez} alt="cracklez" width={550} height={550} />
       <div className={style.copy}>© 2023 Cracklez Studio</div>
     </div>
   );

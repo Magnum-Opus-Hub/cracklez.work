@@ -23,35 +23,40 @@ const Sidemenu = () => {
 
         isMobile ?
                 <div className={style.navContainerMobile}>
-                    <div className={style.logo}>
+                    <div className={style.logo}  >
+                    <Link href="/">
                     <Image
                     src={`/images/logo.svg`}
                     layout="responsive"
-                    width={1}
-                    height={1}
+                    width={30}
+                    height={30}
                     alt='cracklez logo'
-                    ></Image>
+                    />
+                    </Link>
                     </div>
                 {
-                    !burger 
+                    !burger
 
-                    ? 
+                    ?
                     <div className={style.burgerShow}>
                         <button onClick={displayBurger}>
-                        <img
+                        <Image
                         src={`/images/menushow.svg`}
                         alt='cracklez logo'
-                        ></img>
+                        width={25}
+                        height={25}
+                        ></Image>
                         </button>
-                    </div> 
-                    
+                    </div>
+
                     : <div className={style.burgerHide}>
                         <Nav></Nav>
-                        <button onClick={hideBurger}><img
+                        <button onClick={hideBurger}><Image
                         src={`/images/menuhide.svg`}
-
+                        width={25}
+                        height={25}
                         alt='cracklez logo'
-                        ></img></button>
+                        /></button>
                       </div>
                 }
                 </div>
@@ -65,7 +70,7 @@ const Sidemenu = () => {
           width={35}
           height={35}
           alt='cracklez logo'
-        ></Image>
+        />
                 </div>
 
                 <div className={style.navContainer}><Nav page={undefined}/></div>

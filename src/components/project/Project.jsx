@@ -13,7 +13,8 @@ const Project = ({ project }) => {
           <Image
             src={`/images/${project.name}/1.png`}
             alt={project.name}
-          ></Image>
+            width={900} height={900}
+          />
         </Link>
       </div>
     </div>

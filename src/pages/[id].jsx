@@ -67,7 +67,7 @@ import Modal from "../components/modal/Modal"
         setCurrentIndex(newIndex);
     }
 
-    const {isMobile} = useIsMobile();
+    // const {isMobile} = useIsMobile();
 
     useEffect(() => {
         console.log(
@@ -77,7 +77,7 @@ import Modal from "../components/modal/Modal"
             return;
         }
         setProject(projects[+id]);
-    }, [id]);
+    }, [clickedImg, currentIndex, id]);
     return (
         <>
             <Head>
@@ -85,7 +85,7 @@ import Modal from "../components/modal/Modal"
             </Head>
             <div
                 className={
-                   styles.projectContainer
+                styles.projectContainer
                 }
             >
 
@@ -122,7 +122,7 @@ import Modal from "../components/modal/Modal"
             </div>
             <div
                 className={
-                     styles.imageRollContainer
+                    styles.imageRollContainer
                 }
             >
                 {project && project.images &&
@@ -135,12 +135,14 @@ import Modal from "../components/modal/Modal"
                                     onClick={()=> handleClick(item,index)}
                                     src={item}
                                     alt={project.name}
-                                ></Image>
+                                    height={1000}
+                                    width={1000}
+                                />
                         </div>
                     ))}
                 <div className={styles.buttonsContainer}>
-                    <button onClick={handlePrevious}><Image src={`/images/arrow1.svg`} alt="" />Previous</button>
-                    <button onClick={handleNext}>Next<Image src={`/images/arrow2.svg`} alt="" /></button>
+                    <button onClick={handlePrevious}><Image src={`/images/arrow1.svg`} alt="" height={15} width={25}  />Previous</button>
+                    <button onClick={handleNext}>Next<Image src={`/images/arrow2.svg`} alt="" height={15} width={25} /></button>
                 </div>
                 {clickedImg &&
                     <Modal clickedImg={clickedImg} totalLength={totalLength} handleRotationRight={handleRotationRight} handleRotationLeft={handleRotationLeft} setClickedImg={setClickedImg} />

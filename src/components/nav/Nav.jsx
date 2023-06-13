@@ -54,7 +54,7 @@ const Nav = ({ page }) => {
               <Link key={i} href={link.url} className={page === '' ? style.linkActive : ''}>
               {
                     (router.pathname === link.url) ? <div className={style.linkActive}>
-                      <Image src={`/images/arrow.svg`} alt="" />
+                      <Image src={`/images/arrow.svg`} alt="" width={30} height={30} />
                       <p>{link.label}</p>
                     </div> : <p>{link.label}</p>
                   }
