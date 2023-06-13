@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useEffect } from 'react';
 
 const Modal = ({
@@ -18,12 +19,12 @@ const Modal = ({
 
 {totalLength.length === 1 ? (
           <div className="overlay dismiss" onClick={handleClick}>
-          
-          <img src={clickedImg} alt="bigger picture" />
+
+          <Image src={clickedImg} alt="bigger picture"  />
           <span className="dismiss" onClick={handleClick}>
             x
           </span>
-          
+
         </div>
         ) : (
           <>
@@ -44,7 +45,7 @@ const Modal = ({
             </svg>
           </button>
         </div>
-        <img src={clickedImg} alt="bigger picture" />
+        <Image src={clickedImg} alt="bigger picture" />
         <span className="dismiss" onClick={handleClick}>
           X
         </span>

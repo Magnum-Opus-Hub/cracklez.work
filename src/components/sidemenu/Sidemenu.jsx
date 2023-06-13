@@ -4,6 +4,7 @@ import useIsMobile from "../../hooks/useIsMobile";
 import style from './Sidemenu.module.scss'
 import dynamic from "next/dynamic";
 import Link from "next/link";
+import Image from 'next/image';
 
 const Sidemenu = () => {
     const {isMobile} = useIsMobile();
@@ -18,12 +19,13 @@ const Sidemenu = () => {
             <div className={isMobile ? style.containerMobile : style.container}>
                 <div className={style.titleContainer}>
                     <div className={style.title}><Link href="/">cracklez</Link></div>
-                    <img
+                    <Image
           src={`/images/logo.svg`}
           layout="responsive"
           width={35}
           height={35}
-        ></img>
+          alt='cracklez logo'
+        ></Image>
                 </div>
 
                 <div className={style.navContainer}><Nav page={undefined}/></div>
