@@ -1,14 +1,10 @@
 .containerMobile{
   width: 100vw;
-  z-index: 101;
-  position: fixed;
-  top: 0;
   background: white;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  flex-direction: column;
   height: 40px;
-  z-index: 100;
+  background: transparent;
 }
 
 .container{
@@ -24,9 +20,11 @@
     font-size: var(--menu);
     padding: 0;
     margin: 0;
+    background: transparent;
   }
   
   .linkActive{
+    background: transparent;
     display: flex;
     align-items: center;
     .bullet{
@@ -74,6 +72,7 @@
 @media only screen and (max-width: 500px) {
   .container, .containerMobile{
     display: flex;
+    text-align: center;
     p{
       text-decoration: none;
       color: var(--black);
@@ -81,6 +80,19 @@
       font-size: var(--mobile-text);
       padding: 0;
       margin: 0;
+    }
+
+    .linkActive{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .bullet{
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: var(--gray);
+      }
     }
   }
 }
