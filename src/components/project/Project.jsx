@@ -10,10 +10,8 @@ const Project = ({ project }) => {
     <div className={styles.project}>
       <div className={styles.projectImg}>
         <Link href={`/${project.id}`}>
-          <Image
+          <img
             src={`/images/${project.name}/1.png`}
-            alt={project.name}
-            width={900} height={900}
           />
         </Link>
       </div>

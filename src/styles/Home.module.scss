@@ -4,6 +4,7 @@
 
 
 .projectsContainer {
+    padding-top: 13px;
     column-count: 3;
     div{
         transition: all .2s ease-in-out; 
@@ -14,7 +15,7 @@
 }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1000px) {
     .projectsContainer {
         padding-top: 70px;
         column-count: 1;

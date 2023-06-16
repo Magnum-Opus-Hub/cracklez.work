@@ -3,7 +3,6 @@ import '../styles/globals.scss';
 import AnimatedCursor from 'react-animated-cursor';
 import { Analytics } from '@vercel/analytics/react';
 import { useEffect, useState } from 'react';
-// import videoBg from '../images/animation.mp4';
 
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(false);

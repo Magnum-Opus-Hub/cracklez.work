@@ -69,7 +69,7 @@
 
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1000px) {
   .container, .containerMobile{
     display: flex;
     text-align: center;
@@ -77,7 +77,7 @@
       text-decoration: none;
       color: var(--black);
       font-family: NeueHaasDisplay-Mediu;
-      font-size: var(--mobile-text);
+      font-size: var(--text);
       padding: 0;
       margin: 0;
     }

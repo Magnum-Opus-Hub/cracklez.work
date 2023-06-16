@@ -1,11 +1,6 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import style from './About.module.scss';
-import Head from 'next/head';
-import dynamic from 'next/dynamic';
-import useIsMobile from '../../hooks/useIsMobile';
-import clients from '../../utils/clients';
-import Image from 'next/image';
-import Cracklez from "public/images/cracklez.png"
+
 
 const About = () => {
   return (
@@ -34,7 +29,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Image src={Cracklez} alt="cracklez" width={550} height={550} />
+      <img src="/images/cracklez.png" alt="cracklez"/>
       <div className={style.copy}>© 2023 Cracklez Studio</div>
     </div>
   );

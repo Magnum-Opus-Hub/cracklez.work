@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 function getIsMobile() {
   const { innerWidth: width } = window;
   return {
-    isMobile: width < 700,
+    isMobile: width < 1000,
   };
 }
 

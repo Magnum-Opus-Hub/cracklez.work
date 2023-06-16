@@ -5,16 +5,17 @@ import style from './Sidemenu.module.scss'
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import { useState } from 'react';
-import Image from 'next/image';
 
 const Sidemenu = () => {
     const {isMobile} = useIsMobile();
     const [burger, setBurger] = useState(false)
     const displayBurger = () => {
+        console.log('ceva display',burger)
         setBurger(true)
     }
 
     const hideBurger = () =>{
+        console.log('ceva hide',burger)
         setBurger(false)
     }
 
@@ -25,11 +26,8 @@ const Sidemenu = () => {
                 <div className={style.navContainerMobile}>
                     <div className={style.logo}  >
                     <Link href="/">
-                    <Image
+                    <img
                     src={`/images/logo.svg`}
-                    layout="responsive"
-                    width={30}
-                    height={30}
                     alt='cracklez logo'
                     />
                     </Link>
@@ -40,21 +38,28 @@ const Sidemenu = () => {
                     ?
                     <div className={style.burgerShow}>
                         <button onClick={displayBurger}>
-                        <Image
+                        <img
                         src={`/images/menushow.svg`}
                         alt='cracklez logo'
-                        width={25}
-                        height={25}
-                        ></Image>
+                        ></img>
                         </button>
                     </div>
 
                     : <div className={style.burgerHide}>
-                        <Nav></Nav>
-                        <button onClick={hideBurger}><Image
+                        <Nav burger={val => setBurger(val)} ></Nav>
+                        <div className={style.copy}>
+                        <div className={style.logo}  >
+                    <Link href="/">
+                    <img
+                    src={`/images/logo.svg`}
+                    alt='cracklez logo'
+                    />
+                    </Link>
+                    </div>
+                        <div>© 2023 Cracklez Studio</div>
+                        </div>
+                        <button onClick={hideBurger}><img
                         src={`/images/menuhide.svg`}
-                        width={25}
-                        height={25}
                         alt='cracklez logo'
                         /></button>
                       </div>
@@ -64,7 +69,7 @@ const Sidemenu = () => {
             <div className={isMobile ? style.containerMobile : style.container}>
                 <div className={style.titleContainer}>
                     <div className={style.title}><Link href="/">cracklez</Link></div>
-                    <Image
+                    <img
           src={`/images/logo.svg`}
           layout="responsive"
           width={35}

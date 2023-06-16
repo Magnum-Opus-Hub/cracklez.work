@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import style from './Nav.module.scss';
 import useIsMobile from '../../hooks/useIsMobile';
 import dynamic from 'next/dynamic';
 import Link from "next/link";
-import Image from 'next/image';
 
 
 const links = [
@@ -34,9 +33,18 @@ const yearLinks = [
 ];
 
 
-const Nav = ({ page }) => {
+const Nav = ({ page, burger }) => {
+
+  useEffect(()=>{
+    console.log('pula mea', burger)
+  },[])
 
   const router = useRouter()
+
+  const onCloseBurger = () =>{
+    burger = false
+    console.log('burger', burger)
+  }
 
   const { isMobile } = useIsMobile();
   return (
@@ -54,7 +62,7 @@ const Nav = ({ page }) => {
               <Link key={i} href={link.url} className={page === '' ? style.linkActive : ''}>
               {
                     (router.pathname === link.url) ? <div className={style.linkActive}>
-                      <Image src={`/images/arrow.svg`} alt="" width={30} height={30} />
+                      <img src={`/images/arrow.svg`} alt=""/>
                       <p>{link.label}</p>
                     </div> : <p>{link.label}</p>
                   }
@@ -62,7 +70,8 @@ const Nav = ({ page }) => {
             ))}
           </div>
           {links.map((link, i) => (
-            <Link key={i} href={link.url} className={page === '' ? style.linkActive : ''}>
+            <div onClick={onCloseBurger}>
+              <Link key={i} href={link.url} className={page === '' ? style.linkActive : ''}>
               {
                   (router.pathname === link.url) ? <div className={style.linkActive}>
                     <div className={style.bullet}></div>
@@ -70,11 +79,12 @@ const Nav = ({ page }) => {
                   </div> : <p>{link.label}</p>
                 }
             </Link>
+            </div>
         ))}
       </div>
   );
 };
 
 export default dynamic(() => Promise.resolve(Nav), {
-  ssr: false,
+  ssr: true,
 })

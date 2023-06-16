@@ -1,6 +1,4 @@
-import Image from 'next/image';
-import { useEffect } from 'react';
-import styles from './Modal.module.scss';
+import  './Modal.module.scss';
 
 const Modal = ({
   clickedImg,
@@ -9,6 +7,7 @@ const Modal = ({
   totalLength,
   handleRotationLeft,
 }) => {
+
   const handleClick = (e) => {
     if (e.target.classList.contains('dismiss')) {
       setClickedImg(null);
@@ -21,7 +20,7 @@ const Modal = ({
 {totalLength.length === 1 ? (
           <div className="overlay dismiss" onClick={handleClick}>
 
-          <Image src={clickedImg} alt="bigger picture"  width={1000} height={900}   />
+          <img src={clickedImg} alt="bigger picture"/>
           <span className="dismiss" onClick={handleClick}>
             x
           </span>
@@ -46,7 +45,7 @@ const Modal = ({
             </svg>
           </button>
         </div>
-        <Image src={clickedImg} alt="bigger picture"  width={1000} height={900} />
+        <img src={clickedImg} alt="bigger picture"/>
         <span className="dismiss" onClick={handleClick}>
           X
         </span>

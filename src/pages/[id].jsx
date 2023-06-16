@@ -131,12 +131,10 @@ import Modal from "../components/modal/Modal"
                             className={styles.imgContainer}
                             key={index}
                         >
-                                <Image
+                                <img
                                     onClick={()=> handleClick(item,index)}
                                     src={item}
                                     alt={project.name}
-                                    height={1000}
-                                    width={1000}
                                 />
                         </div>
                     ))}

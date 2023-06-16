@@ -58,19 +58,18 @@
 
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1000px) {
   .container {
     flex-direction: column;
-    padding: 0 3vw;
+    padding: 0 2vw;
     display: flex;
     height: 100%;
-    margin-top: 10vh;
     justify-content: flex-end;
   
     img{
       width: auto;
       height: auto;
-      margin: 0;
+      margin-bottom: 2vh;
     }
   
     .containerLeft{
@@ -80,8 +79,9 @@
       justify-content: space-between;
       width: auto;
       .title{
+        text-align: center;
         font-family: NeueHaasDisplay-Mediu;
-        font-size: var(--mobile-text);
+        font-size: var(--text);
         padding-bottom: 2vh;
       }
       .description{
