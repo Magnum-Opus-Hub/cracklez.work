@@ -67,8 +67,6 @@ import Modal from "../components/modal/Modal"
         setCurrentIndex(newIndex);
     }
 
-    // const {isMobile} = useIsMobile();
-
     useEffect(() => {
         console.log(
             currentIndex, clickedImg

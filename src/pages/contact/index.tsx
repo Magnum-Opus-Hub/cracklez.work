@@ -45,7 +45,7 @@ const Contact = () => {
             <input
               required
               className={styles.input}
-              placeholder="subject"
+              placeholder="Subject"
               type="text"
               name="subject"
             />
@@ -53,7 +53,7 @@ const Contact = () => {
             <input
               required
               className={styles.input}
-              placeholder="email"
+              placeholder="Email"
               type="email"
               name="user_email"
             />
@@ -61,7 +61,7 @@ const Contact = () => {
             <input
               required
               className={styles.input}
-              placeholder="budget"
+              placeholder="Budget"
               type="text"
               name="budget"
             />

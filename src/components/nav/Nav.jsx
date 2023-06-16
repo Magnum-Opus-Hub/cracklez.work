@@ -42,7 +42,7 @@ const Nav = ({ page, burger }) => {
   const router = useRouter()
 
   const onCloseBurger = () =>{
-    burger = false
+    
     console.log('burger', burger)
   }
 
