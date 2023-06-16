@@ -1,8 +1,14 @@
+.container{
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+  .children{
+    flex-grow: 1;
+    margin-left: 0;
+    overflow: auto;
+  }
 
-.children{
-  margin-left: 15vw;
-}
-
-.childrenMobile{
-  margin-left: 0;
+  .childrenMobile{
+    margin-left: 0;
+  }
 }
