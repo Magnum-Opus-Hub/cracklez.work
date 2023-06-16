@@ -4,6 +4,7 @@ import AnimatedCursor from 'react-animated-cursor';
 import { Analytics } from '@vercel/analytics/react';
 import { useEffect, useState } from 'react';
 
+
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(false);
 
@@ -17,15 +18,16 @@ function MyApp({ Component, pageProps }) {
   }, []);
   return (
     <>
-      <div className={!loading ? 'videonot' : 'video'}>
+    {/* the video is not working on mobile, so i have to fix that */}
+    <div className={!loading ? 'videonot' : 'video'}>
         <video
         src="/images/animation.mp4"
-        className='object-cover w-full h-full'
-        autoPlay
-        muted
-        playsInline
-        />
-      </div>
+          autoPlay
+          muted
+          playsInline
+/>
+    </div>
+
       <Layout>
         <AnimatedCursor
           innerSize={8}
