@@ -8,6 +8,7 @@ import { useState } from 'react';
 
 const Sidemenu = () => {
     const {isMobile} = useIsMobile();
+
     const [burger, setBurger] = useState(false)
     const displayBurger = () => {
         console.log('ceva display',burger)
