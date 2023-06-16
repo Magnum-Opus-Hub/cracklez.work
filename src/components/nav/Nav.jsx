@@ -14,7 +14,7 @@ const links = [
   {
     url: '/about',
     label: 'About',
-  }
+  },
 ];
 
 const yearLinks = [
@@ -34,21 +34,21 @@ const yearLinks = [
 
 
 const Nav = ({ page, burger }) => {
-
-  useEffect(()=>{
-    console.log('pula mea', burger)
-  },[])
-
   const router = useRouter()
 
-  const onCloseBurger = () =>{
-    
+  useEffect(() => {
     console.log('burger', burger)
+  }, [burger])
+
+  const onCloseBurger = () => {
+    burger(false)
   }
+
 
   const { isMobile } = useIsMobile();
   return (
       <div className={isMobile ? style.containerMobile : style.container}>
+          <div onClick={onCloseBurger} >
         <Link href={'/'}>
                 {
                   (router.pathname === '/') ? <div className={style.linkActive}>
@@ -57,8 +57,10 @@ const Nav = ({ page, burger }) => {
                   </div> : <p>Work</p>
                 }
         </Link>
+        </div>
           <div className={isMobile ? style.navGroupMobile : style.navGroup}>
             {yearLinks.map((link, i) => (
+               <div onClick={onCloseBurger} key ={i}>
               <Link key={i} href={link.url} className={page === '' ? style.linkActive : ''}>
               {
                     (router.pathname === link.url) ? <div className={style.linkActive}>
@@ -67,6 +69,7 @@ const Nav = ({ page, burger }) => {
                     </div> : <p>{link.label}</p>
                   }
               </Link>
+              </div>
             ))}
           </div>
           {links.map((link, i) => (
