@@ -70,8 +70,8 @@ const Nav = ({ page, burger }) => {
             ))}
           </div>
           {links.map((link, i) => (
-            <div onClick={onCloseBurger}>
-              <Link key={i} href={link.url} className={page === '' ? style.linkActive : ''}>
+            <div key={i}  onClick={onCloseBurger}>
+              <Link href={link.url} className={page === '' ? style.linkActive : ''}>
               {
                   (router.pathname === link.url) ? <div className={style.linkActive}>
                     <div className={style.bullet}></div>
