@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }) {
           innerScale={1}
           outerScale={1.7}
           outerAlpha={0}
-          hasBlendMode={true}
+          // hasBlendMode={true}
           outerStyle={{
             border: '3px solid var(--black)',
           }}

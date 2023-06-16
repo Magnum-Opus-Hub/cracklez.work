@@ -1,4 +1,4 @@
-import  './Modal.module.scss';
+import style from  './Modal.module.scss';
 
 const Modal = ({
   clickedImg,
@@ -7,6 +7,8 @@ const Modal = ({
   totalLength,
   handleRotationLeft,
 }) => {
+
+  //change the image on click insted of 'dismiss' to be what I have now at classname
 
   const handleClick = (e) => {
     if (e.target.classList.contains('dismiss')) {
@@ -21,8 +23,8 @@ const Modal = ({
           <div className="overlay dismiss" onClick={handleClick}>
 
           <img src={clickedImg} alt="bigger picture"/>
-          <span className="dismiss" onClick={handleClick}>
-            x
+          <span className={style.xbutton}  onClick={handleClick}>
+          <p className='dismiss'>x</p>
           </span>
 
         </div>
@@ -46,8 +48,8 @@ const Modal = ({
           </button>
         </div>
         <img src={clickedImg} alt="bigger picture"/>
-        <span className="dismiss" onClick={handleClick}>
-          X
+        <span className={style.xbutton} onClick={handleClick}>
+        <p className='dismiss'>X</p>
         </span>
         <div onClick={handleRotationRight} className="overlay-arrows_right">
           <button>
