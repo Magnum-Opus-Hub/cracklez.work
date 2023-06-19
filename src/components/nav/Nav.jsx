@@ -41,9 +41,10 @@ const Nav = ({ page, burger }) => {
   }, [burger])
 
   const onCloseBurger = () => {
-    burger(false)
-  }
-
+    if (typeof burger === 'function') {
+      burger(false);
+    }
+  };
 
   const { isMobile } = useIsMobile();
   return (

@@ -1,5 +1,6 @@
 # Git  workflow
 
+git pull
 git checkout main
 git checkout -b develop
 git checkout -b feature_branch

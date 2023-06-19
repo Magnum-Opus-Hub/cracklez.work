@@ -7,6 +7,7 @@ import {useRouter} from "next/router";
 import React from "react";
 import Project from '../components/project/Project';
 import projects from '../utils/projects';
+// import { Analytics } from '@vercel/analytics/react'
 
 
 export function Home() {
@@ -28,6 +29,7 @@ export function Home() {
                 ))}
             </div>
       </div>
+        {/*<Analytics />*/}
     </>
   );
 }
