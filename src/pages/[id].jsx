@@ -68,9 +68,6 @@ import Modal from "../components/modal/Modal"
     }
 
     useEffect(() => {
-        console.log(
-            currentIndex, clickedImg
-        )
         if (!id) {
             return;
         }

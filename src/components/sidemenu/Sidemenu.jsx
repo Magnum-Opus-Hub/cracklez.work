@@ -11,12 +11,10 @@ const Sidemenu = () => {
 
     const [burger, setBurger] = useState(false)
     const displayBurger = () => {
-        console.log('ceva display',burger)
         setBurger(true)
     }
 
     const hideBurger = () =>{
-        console.log('ceva hide',burger)
         setBurger(false)
     }
 

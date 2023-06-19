@@ -36,10 +36,6 @@ const yearLinks = [
 const Nav = ({ page, burger }) => {
   const router = useRouter()
 
-  useEffect(() => {
-    console.log('burger', burger)
-  }, [burger])
-
   const onCloseBurger = () => {
     if (typeof burger === 'function') {
       burger(false);
