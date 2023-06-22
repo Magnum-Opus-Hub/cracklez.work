@@ -77,9 +77,15 @@
       text-decoration: none;
       color: var(--black);
       font-family: NeueHaasDisplay-Mediu;
-      font-size: var(--text);
+      font-size: 32px;
       padding: 0;
       margin: 0;
+    }
+    .navGroupMobile{
+      p{        
+        font-size: 28px;
+        font-family: NeueHaasDisplay-Roman;
+      }
     }
 
     .linkActive{

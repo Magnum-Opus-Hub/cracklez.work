@@ -50,12 +50,12 @@ const Sidemenu = () => {
                         <div className={style.logo}  >
                     <Link href="/">
                     <img
-                    src={`/images/logo.svg`}
+                    src={`/images/robotgri.svg`}
                     alt='cracklez logo'
                     />
                     </Link>
                     </div>
-                        <div>© 2023 Cracklez Studio</div>
+                        <div className={style.copyMobile}>© 2023 Cracklez Studio</div>
                         </div>
                         <button onClick={hideBurger}><img
                         src={`/images/menuhide.svg`}
