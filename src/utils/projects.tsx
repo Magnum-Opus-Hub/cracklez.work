@@ -1,4 +1,5 @@
-const projects = [
+
+export const projects = [
   {
     id: '0',
     year: '2023',
@@ -359,10 +360,10 @@ const projects = [
   {
     id: '34',
     year: '2022',
-    name: 'Internet Raised Graphic',
+    name: 'Internet Raised',
     client: 'LXRDZ',
     description: `T-shirt and sticker designs for Internet Raised`,
-    images: ['/images/Internet Raised Graphic/1.png'],
+    images: ['/images/Internet Raised/1.png'],
   },
   {
     id: '35',

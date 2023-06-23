@@ -1,23 +1,16 @@
 .container{
     width: 99%;
-}
+  }
 
-
-.projectsContainer {
+  .projectsContainer {
     padding-top: 13px;
     column-count: 3;
-    div{
-        transition: all .2s ease-in-out; 
-    }
-    div:hover{
-        transform: scale(0.95); 
-    }
-}
+  }
 
-
-@media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 1000px) {
     .projectsContainer {
-        padding-top: 30px;
-        column-count: 1;
+    padding-top: 30px;
+    column-count: 1;
+
     }
   }
