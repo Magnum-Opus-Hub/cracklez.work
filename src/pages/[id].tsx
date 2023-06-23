@@ -77,11 +77,11 @@ interface ProjectProps {
       setCurrentIndex(newIndex);
     }
 
-    useEffect(() => {
-      if (clickedImg == null && project.images.length > 0) {
-        handleClick(project.images[0], 0);
-      }
-    }, [project]);
+    // useEffect(() => {
+    //   if (clickedImg == null && project.images.length > 0) {
+    //     handleClick(project.images[0], 0);
+    //   }
+    // }, [project]);
 
    return (
     <>
