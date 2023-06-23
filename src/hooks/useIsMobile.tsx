@@ -1,12 +1,11 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
-function getIsMobile() {
+export function getIsMobile() {
   const { innerWidth: width } = window;
   return {
     isMobile: width < 1000,
   };
 }
-
 export default function useIsMobile() {
   const [windowDimensions, setWindowDimensions] = useState(getIsMobile());
 

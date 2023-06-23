@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useRouter } from 'next/router';
+import { usePathname} from "next/navigation"
 import style from './Nav.module.scss';
 import useIsMobile from '../../hooks/useIsMobile';
 import dynamic from 'next/dynamic';
@@ -35,14 +36,20 @@ const yearLinks = [
 
 const Nav = ({ page, burger }) => {
   const router = useRouter()
+  const pathname = usePathname()
+
 
   const onCloseBurger = () => {
     if (typeof burger === 'function') {
       burger(false);
     }
   };
-
+  
   const { isMobile } = useIsMobile();
+
+  if (pathname === '/studio') {
+    return null
+  }
   return (
       <div className={isMobile ? style.containerMobile : style.container}>
           <div onClick={onCloseBurger} >
@@ -81,6 +88,11 @@ const Nav = ({ page, burger }) => {
             </Link>
             </div>
         ))}
+        {process.env.NODE_ENV === "development" && (
+            <Link href="/studio">
+              <p> Studio </p>
+                </Link>
+                )}
       </div>
   );
 };

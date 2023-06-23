@@ -1,3 +1,4 @@
+import  urlFor  from '../../../lib/urlFor';
 import style from  './Modal.module.scss';
 
 const Modal = ({
@@ -7,22 +8,22 @@ const Modal = ({
   totalLength,
   handleRotationLeft,
 }) => {
-
-  //change the image on click insted of 'dismiss' to be what I have now at classname
-
   const handleClick = (e) => {
     if (e.target.classList.contains('dismiss')) {
       setClickedImg(null);
     }
   };
 
+
+  const imgUrl = clickedImg ? urlFor(clickedImg).url() : '';
+
   return (
     <>
 
-{totalLength.length === 1 ? (
+{totalLength === 1 ? (
           <div className="overlay dismiss" onClick={handleClick}>
 
-          <img src={clickedImg} alt="bigger picture"/>
+          <img src={imgUrl} alt="bigger picture"/>
           <span className={style.xbutton}  onClick={handleClick}>
           <p className='dismiss'>x</p>
           </span>
@@ -47,7 +48,7 @@ const Modal = ({
             </svg>
           </button>
         </div>
-        <img src={clickedImg} alt="bigger picture"/>
+        <img src={imgUrl} alt="bigger picture"/>
         <span className={style.xbutton} onClick={handleClick}>
         <p className='dismiss'>X</p>
         </span>
@@ -75,6 +76,3 @@ const Modal = ({
 };
 
 export default Modal;
-
-
-
