@@ -7,6 +7,7 @@ const About = () => {
     <div className={style.container}>
       <div className={style.containerLeft}>
         <div className={style.title}>Hi! I am Cracklez :)</div>
+      <img src="/images/cracklez.png" alt="cracklez"/>
         <div className={style.description}>
           I am a freelance illustrator and graphic designer based in Bucharest,
           Romania. Most of my work is inspired by robots, old animes, skate-punk
@@ -29,7 +30,6 @@ const About = () => {
           </div>
         </div>
       </div>
-      <img src="/images/cracklez.png" alt="cracklez"/>
       <div className={style.copy}>© 2023 Cracklez Studio</div>
     </div>
   );
