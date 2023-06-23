@@ -8,6 +8,8 @@ import clients from '../../utils/clients';
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
 
+  const title = "Let's work together!"
+
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
@@ -38,7 +40,7 @@ const Contact = () => {
       <div className={styles.layout}>
         <div className={styles.container}>
           <div className={styles.titleContainer}>
-            <div className={styles.title}>Let`s work together!</div>
+            <div className={styles.title}>{title}</div>
             <div className={styles.email}>crcklzo@gmail.com</div>
           </div>
           <form ref={form} onSubmit={sendEmail}>
