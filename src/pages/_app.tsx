@@ -16,16 +16,20 @@ function MyApp({ Component, pageProps }) {
       setLoading(false);
     }, 3500);
   }, []);
+
   return (
     <>
     {/* the video is not working on mobile, so i have to fix that */}
     <div className={!loading ? 'videonot' : 'video'}>
-        <video
-        src="/images/animation.mp4"
-          autoPlay
-          muted
-          playsInline
-/>
+  <video
+    className='fixed top-0 left-0 w-full h-full object-cover z-0'
+    src="/images/animation.mp4"
+    autoPlay
+    muted
+    playsInline
+  >
+    Your browser does not support the video tag.
+  </video>
     </div>
 
       <Layout>
