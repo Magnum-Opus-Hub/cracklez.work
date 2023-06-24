@@ -1,5 +1,6 @@
 import  urlFor  from '../../../lib/urlFor';
 import style from  './Modal.module.scss';
+import Image from 'next/image';
 
 const Modal = ({
   clickedImg,
@@ -23,7 +24,7 @@ const Modal = ({
 {totalLength === 1 ? (
           <div className="overlay dismiss" onClick={handleClick}>
 
-          <img src={imgUrl} alt="bigger picture"/>
+          <Image src={imgUrl} alt="bigger picture" height={900} width={800}/>
           <span className={style.xbutton}  onClick={handleClick}>
           <p className='dismiss'>x</p>
           </span>
@@ -48,7 +49,7 @@ const Modal = ({
             </svg>
           </button>
         </div>
-        <img src={imgUrl} alt="bigger picture"/>
+        <Image src={imgUrl} alt="bigger picture" height={900} width={800}/>
         <span className={style.xbutton} onClick={handleClick}>
         <p className='dismiss'>X</p>
         </span>
