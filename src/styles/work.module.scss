@@ -14,8 +14,11 @@
 }
   button{
     text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     img{
-      width: 20px;
+      width: 30px;
     }
   }
 }
