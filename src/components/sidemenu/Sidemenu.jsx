@@ -38,7 +38,7 @@ const Sidemenu = () => {
                     <div className={style.burgerShow}>
                         <button onClick={displayBurger}>
                         <img
-                        src={`/images/menushow.svg`}
+                        src={`/images/menushow1.svg`}
                         alt='cracklez logo'
                         ></img>
                         </button>
@@ -58,7 +58,7 @@ const Sidemenu = () => {
                         <div className={style.copyMobile}>© 2023 Cracklez Studio</div>
                         </div>
                         <button onClick={hideBurger}><img
-                        src={`/images/menuhide.svg`}
+                        src={`/images/menuhide1.svg`}
                         alt='cracklez logo'
                         /></button>
                       </div>
