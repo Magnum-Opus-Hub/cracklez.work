@@ -92,6 +92,37 @@
       height: 20px;
     }
   }
+
+  .linkYear{
+    text-decoration: none;
+    color: var(--black);
+    font-family: NeueHaasDisplay-Mediu;
+    font-size: var(--menu);
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    align-items: center;
+    display: inline-block;
+    position: relative;
+  }
+  
+    .linkYear::after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 4px;
+      bottom: 0px;
+      left: 0;
+      background-color: var(--black);
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+  
+    .linkYear:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
   p{
     text-decoration: none;
     color: var(--black);

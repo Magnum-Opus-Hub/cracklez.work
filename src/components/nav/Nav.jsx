@@ -71,7 +71,7 @@ const Nav = ({ page, burger }) => {
                     (router.pathname === link.url) ? <div className={style.linkActiveYear}>
                       <img src={`/images/arrow.svg`} alt=""/>
                       <p>{link.label}</p>
-                    </div> : <div className={style.link}>
+                    </div> : <div className={style.linkYear}>
                     <p>{link.label}</p>
                   </div>
                   }

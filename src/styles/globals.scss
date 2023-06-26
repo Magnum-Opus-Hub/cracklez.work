@@ -44,6 +44,7 @@ body {
   --mobile-text: 20px;
 }
 
+
 .ovfn{
   overflow: hidden;
   background: #3C6EDA;
@@ -90,9 +91,8 @@ body {
   }
 
   > span {
-
-    top: 20px;
-    right: 20px;
+    top: 2vh;
+    right: 1vw;
     font-size: 30px;
     color: var(--gray);
     font-family: NeueHaasDisplay-Mediu;

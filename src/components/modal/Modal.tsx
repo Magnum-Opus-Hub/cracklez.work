@@ -23,7 +23,13 @@ const Modal = ({
         <div className="overlay dismiss" onClick={handleClick}>
           <img src={imgUrl} alt="bigger picture" />
           <span className={style.xbutton} onClick={handleClick}>
-            <p className="dismiss">x</p>
+          <Image
+                  src={`/images/X.svg`}
+                  alt=""
+                  className="dismiss"
+                  height={15}
+                  width={50}
+                />
           </span>
         </div>
       ) : (
@@ -41,7 +47,13 @@ const Modal = ({
             </div>
             <img src={imgUrl} alt="bigger picture"/>
             <span className={style.xbutton} onClick={handleClick}>
-              <p className="dismiss">X</p>
+            <Image
+                  src={`/images/X.svg`}
+                  alt=""
+                  className="dismiss"
+                  height={15}
+                  width={50}
+                />
             </span>
             <div onClick={handleRotationRight} className="overlay-arrows_right">
               <button>
