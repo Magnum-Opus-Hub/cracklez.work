@@ -56,18 +56,19 @@ const Nav = ({ page, burger }) => {
         <Link href={'/'}>
                 {
                   (router.pathname === '/') ? <div className={style.linkActive}>
-                    <div className={style.bullet}></div>
                     <p>Work</p>
-                  </div> : <p>Work</p>
+                  </div> : <div className={style.link}>
+                    <p>Work</p>
+                  </div>
                 }
         </Link>
         </div>
           <div className={isMobile ? style.navGroupMobile : style.navGroup}>
             {yearLinks.map((link, i) => (
                <div onClick={onCloseBurger} key ={i}>
-              <Link key={i} href={link.url} className={page === '' ? style.linkActive : ''}>
+              <Link key={i} href={link.url} className={page === '' ? style.linkActiveYear : ''}>
               {
-                    (router.pathname === link.url) ? <div className={style.linkActive}>
+                    (router.pathname === link.url) ? <div className={style.linkActiveYear}>
                       <img src={`/images/arrow.svg`} alt=""/>
                       <p>{link.label}</p>
                     </div> : <p>{link.label}</p>
@@ -81,9 +82,10 @@ const Nav = ({ page, burger }) => {
               <Link key={i} href={link.url} className={page === '' ? style.linkActive : ''}>
               {
                   (router.pathname === link.url) ? <div className={style.linkActive}>
-                    <div className={style.bullet}></div>
                     <p>{link.label}</p>
-                  </div> : <p>{link.label}</p>
+                  </div> : <div className={style.link}>
+                    <p>{link.label}</p>
+                  </div>
                 }
             </Link>
             </div>
