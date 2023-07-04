@@ -47,22 +47,36 @@ body {
 
 .ovfn{
   overflow: hidden;
-  background: #3C6EDA;
+  background: white;
 }
 
-.video{
+.video {
   width: 100vw;
   height: 100vh;
   position: absolute;
   top: 0;
   right: 0;
   z-index: 9999;
-  object-fit: cover;
   background: #3C6EDA;
+  overflow: hidden;
+  animation: fadeOut 4s ease-in-out infinite;
+}
 
-  video{
-    width: 100vw;
-    height: 100vh;
+.video video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 

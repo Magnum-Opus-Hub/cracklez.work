@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
     {/* the video is not working on mobile, so i have to fix that */}
     <div className={!loading ? 'videonot' : 'video'}>
   <video
-    className='fixed top-0 left-0 w-full h-full object-cover z-0 animate-fade-in-out'
+    className='fixed top-0 left-0 w-full h-full object-cover z-0'
     src="/images/animation.mp4"
     autoPlay
     muted
