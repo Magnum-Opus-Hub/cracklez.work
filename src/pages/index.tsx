@@ -16,6 +16,15 @@ const query = groq`*[_type == "product"]{
 } | order(sequence asc) { _id, name, images, sequence, slug}`
 
 
+export async function getStaticProps() {
+  const productsData = await client.fetch(query);
+
+  return {
+    props: { products: productsData },
+    revalidate: 60, // Revalidate every 60 seconds
+  };
+}
+
 export default function Home() {
   const { isMobile } = useIsMobile();
   const [products, setProducts] = useState([]);
@@ -27,6 +36,7 @@ export default function Home() {
     }
     fetchProducts();
   }, []);
+
 
   return (
     <>

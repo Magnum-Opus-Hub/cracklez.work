@@ -157,6 +157,9 @@ export const getStaticProps: GetStaticProps = async ({ params }: Params) => {
   const currentIndex = allProjects.findIndex(p => p._id === id);
   const nextId = allProjects[currentIndex + 1]?._id || null;
 
-  return { props: { project, nextId } };
+  return {
+    props: { project, nextId },
+    revalidate: 60, // Revalidate every 60 seconds
+  };
 };
 
