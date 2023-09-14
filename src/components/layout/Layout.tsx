@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
       </div>
     </div>
   );
-};
+}
 
 export default dynamic(() => Promise.resolve(Layout), {
   ssr: false,
