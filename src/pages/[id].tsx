@@ -7,8 +7,9 @@ import Modal from "../components/modal/Modal"
 import { Product } from '../../typings';
 import { client } from "../../sanity/lib/client";
 import urlFor from "../../lib/urlFor";
-import { GetStaticPaths, GetStaticProps } from "next";
 import { groq } from "next-sanity";
+import { GetServerSideProps } from 'next';
+
 
 
 interface Params {
@@ -124,19 +125,9 @@ interface ProjectProps {
 
 export default WorkDetail;
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  const projects: Product[] = await client.fetch(groq`*[_type == "product"]{ "id": _id }`);
-  const paths = projects.map((project, index) => ({
-    params: {
-      id: project.id,
-      nextId: projects[index + 1]?.id || null
-    }
-  }));
-  return { paths, fallback: false };
-};
-
-export const getStaticProps: GetStaticProps = async ({ params }: Params) => {
+export const getServerSideProps: GetServerSideProps = async ({ params }) => {
   const { id } = params;
+
   const project: Product = await client.fetch(
     groq`*[_type == "product" && _id == "${id}"][0]{
       _id,
@@ -157,9 +148,5 @@ export const getStaticProps: GetStaticProps = async ({ params }: Params) => {
   const currentIndex = allProjects.findIndex(p => p._id === id);
   const nextId = allProjects[currentIndex + 1]?._id || null;
 
-  return {
-    props: { project, nextId },
-    revalidate: 60, // Revalidate every 60 seconds
-  };
+  return { props: { project, nextId } };
 };
-
