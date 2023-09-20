@@ -42,8 +42,8 @@ const About = () => {
                 </div>
                 <div>
                   Discord ID
-                  <span className={style.discordId}>cracklez#5813</span>
                 </div>
+                <span className={style.discordId}>cracklez#5813</span>
               </div>
             </div>
           </div>
