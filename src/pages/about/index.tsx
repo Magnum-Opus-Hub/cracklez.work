@@ -4,6 +4,12 @@ import useIsMobile from '../../hooks/useIsMobile';
 
 const About = () => {
   const { isMobile } = useIsMobile();
+  const textAbout: string = `I'm a illustrator and graphic designer based in Bucharest,
+  Romania. I'm a 90s kid so I grew up watching all kinds of cartoons
+  and animes which later on inspired me to draw. Most of my personal
+  work is inspired by robots, 90s animes, t-shirt graphics, skate
+  culture, music, cartoons, toys and video games. Clients usually
+  describe my work to be "nostalgic" and "eye catching".`;
 
   return (
     <>
@@ -12,14 +18,7 @@ const About = () => {
           <div className={style.containerLeft}>
             <div className={style.title}>Hi! I am Cracklez :)</div>
             <img src="/images/cracklez.png" alt="cracklez" />
-            <div className={style.description}>
-              I'm a illustrator and graphic designer based in Bucharest,
-              Romania. I'm a 90s kid so I grew up watching all kinds of cartoons
-              and animes which later on inspired me to draw. Most of my personal
-              work is inspired by robots, 90s animes, t-shirt graphics, skate
-              culture, music, cartoons, toys and video games. Clients usually
-              describe my work to be "nostalgic" and "eye catching".
-            </div>
+            <div className={style.description}>{textAbout}</div>
             <div className={style.socialContainer}>
               <div className={style.socialTitle}>Social</div>
               <div className={style.socialPlatforms}>
@@ -42,7 +41,7 @@ const About = () => {
                   </a>
                 </div>
                 <div>
-                    Discord ID
+                  Discord ID
                   <span className={style.discordId}>cracklez#5813</span>
                 </div>
               </div>
@@ -54,14 +53,7 @@ const About = () => {
         <div className={style.container}>
           <div className={style.containerLeft}>
             <div className={style.title}>Hi! I am Cracklez :)</div>
-            <div className={style.description}>
-              I'm a illustrator and graphic designer based in Bucharest,
-              Romania. I'm a 90s kid so I grew up watching all kinds of cartoons
-              and animes which later on inspired me to draw. Most of my personal
-              work is inspired by robots, 90s animes, t-shirt graphics, skate
-              culture, music, cartoons, toys and video games. Clients usually
-              describe my work to be "nostalgic" and "eye catching".
-            </div>
+            <div className={style.description}>{textAbout}</div>
             <div className={style.socialContainer}>
               <div className={style.socialTitle}>Social</div>
               <div className={style.socialPlatforms}>
@@ -83,9 +75,7 @@ const About = () => {
                     Twitter
                   </a>
                 </div>
-                <div>
-                    Discord ID
-                </div>
+                <div>Discord ID</div>
                 <span className={style.discordId}>cracklez#5813</span>
               </div>
             </div>
