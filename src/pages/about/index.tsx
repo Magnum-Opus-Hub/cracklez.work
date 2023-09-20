@@ -13,23 +13,22 @@ const About = () => {
             <div className={style.title}>Hi! I am Cracklez :)</div>
             <img src="/images/cracklez.png" alt="cracklez" />
             <div className={style.description}>
-              I am a freelance illustrator and graphic designer based in
-              Bucharest, Romania. Most of my work is inspired by robots, old
-              animes, skate-punk culture, music, cartoons, toys and video games.
-              When I am not drawing, I like to go outside and skate,
-              watch movies or play video games with my friends.
+            I'm a illustrator and graphic designer based in Bucharest, Romania. I'm a 90s kid so I grew up watching all kinds of cartoons and animes which later on inspired me to draw. Most of my personal work is inspired by robots, 90s animes, t-shirt graphics, skate culture, music, cartoons, toys and video games. Clients usually describe my work to be "nostalgic" and "eye catching".
             </div>
             <div className={style.socialContainer}>
               <div className={style.socialTitle}>Social</div>
               <div className={style.socialPlatforms}>
                 <div>
-                  <a href="">Instagram</a>
+                  <a target="_blank" href="https://www.instagram.com/cracklez/">Instagram</a>
                 </div>
                 <div>
-                  <a href="">Behance</a>
+                  <a target="_blank" href="https://www.behance.net/cracklez">Behance</a>
                 </div>
                 <div>
-                  <a href="">Twitter</a>
+                  <a target="_blank" href="https://twitter.com/Cracklez3https://twitter.com/Cracklez3">Twitter</a>
+                </div>
+                <div>
+                  <a target="_blank" href="https://twitter.com/Cracklez3https://twitter.com/Cracklez3">Twitter</a>
                 </div>
               </div>
             </div>
@@ -41,23 +40,19 @@ const About = () => {
           <div className={style.containerLeft}>
             <div className={style.title}>Hi! I am Cracklez :)</div>
             <div className={style.description}>
-              I am a freelance illustrator and graphic designer based in
-              Bucharest, Romania. Most of my work is inspired by robots, old
-              animes, skate-punk culture, music, cartoons, toys and video games.
-              When I am not drawing, I like to go outside and skate,
-              watch movies or play video games with my friends.
+            I'm a illustrator and graphic designer based in Bucharest, Romania. I'm a 90s kid so I grew up watching all kinds of cartoons and animes which later on inspired me to draw. Most of my personal work is inspired by robots, 90s animes, t-shirt graphics, skate culture, music, cartoons, toys and video games. Clients usually describe my work to be "nostalgic" and "eye catching".
             </div>
             <div className={style.socialContainer}>
               <div className={style.socialTitle}>Social</div>
               <div className={style.socialPlatforms}>
-                <div>
-                  <a href="">Instagram</a>
+              <div>
+                  <a target="_blank" href="https://www.instagram.com/cracklez/">Instagram</a>
                 </div>
                 <div>
-                  <a href="">Behance</a>
+                  <a target="_blank" href="https://www.behance.net/cracklez">Behance</a>
                 </div>
                 <div>
-                  <a href="">Twitter</a>
+                  <a target="_blank" href="https://twitter.com/Cracklez3https://twitter.com/Cracklez3">Twitter</a>
                 </div>
               </div>
             </div>
