@@ -42,12 +42,7 @@ const About = () => {
                   </a>
                 </div>
                 <div>
-                  <a
-                    target="_blank"
-                    href="https://twitter.com/Cracklez3https://twitter.com/Cracklez3"
-                  >
                     Discord ID
-                  </a>
                   <span className={style.discordId}>cracklez#5813</span>
                 </div>
               </div>
@@ -89,12 +84,7 @@ const About = () => {
                   </a>
                 </div>
                 <div>
-                  <a
-                    target="_blank"
-                    href="https://twitter.com/Cracklez3https://twitter.com/Cracklez3"
-                  >
                     Discord ID
-                  </a>
                 </div>
                 <span className={style.discordId}>cracklez#5813</span>
               </div>
